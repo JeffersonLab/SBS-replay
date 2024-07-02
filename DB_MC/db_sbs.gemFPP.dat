@@ -1,0 +1,1380 @@
+950101
+-------[ 2024-10-01 00:00:00 ]
+
+## A chamber is a "Tracker-Plane" composed of vertically stacked modules
+sbs.gemFPP.is_mc = 1
+sbs.gemFPP.onlinezerosuppress = 0
+sbs.gemFPP.pedestalmode = 0
+sbs.gemFPP.commonmode_flag = -1
+sbs.gemFPP.modules = m0 m1 m2 m3  m4 m5 m6 m7  m8 m9 m10 m11  m12 m13 m14 m15  m16 m17 m18 m19  m20 m21 m22 m23  m24 m25 m26 m27  m28 m29 m30 m31
+
+sbs.gemFPP.useconstraint = 1
+
+sbs.gemFPP.gridbinwidthx = 0.01
+sbs.gemFPP.gridbinwidthy = 0.01
+sbs.gemFPP.gridedgetolerancex = 0.003
+sbs.gemFPP.gridedgetolerancey = 0.003
+
+sbs.gemFPP.minhitsontrack = 3
+
+sbs.gemFPP.corrcoeff_cut = 0.5
+sbs.gemFPP.ADCasym_cut = 0.5
+sbs.gemFPP.deltat_cut = 30.0
+sbs.gemFPP.filterflag1D = 0
+sbs.gemFPP.filterflag2D = 0
+
+sbs.gemFPP.threshold_stripsum = 240
+sbs.gemFPP.threshold_sample = 100
+sbs.gemFPP.threshold_clustersum = 400.0
+
+sbs.gemFPP.peakprominence_minsigma = 5.0
+sbs.gemFPP.peakprominence_minfraction = 0.2
+sbs.gemFPP.trackchi2cut = 150.0
+
+sbs.gemFPP.maxnu_charge = 4
+sbs.gemFPP.maxnv_charge = 4
+
+sbs.gemFPP.maxnu_pos = 2
+sbs.gemFPP.maxnv_pos = 2
+
+sbs.gemFPP.m0.pedu = 1500
+sbs.gemFPP.m0.rmsu = 8
+sbs.gemFPP.m0.pedv = 1500
+sbs.gemFPP.m0.rmsv = 8
+
+sbs.gemFPP.m1.pedu = 1500
+sbs.gemFPP.m1.rmsu = 8
+sbs.gemFPP.m1.pedv = 1500
+sbs.gemFPP.m1.rmsv = 8
+
+sbs.gemFPP.m2.pedu = 1500
+sbs.gemFPP.m2.rmsu = 8
+sbs.gemFPP.m2.pedv = 1500
+sbs.gemFPP.m2.rmsv = 8
+
+sbs.gemFPP.m3.pedu = 1500
+sbs.gemFPP.m3.rmsu = 8
+sbs.gemFPP.m3.pedv = 1500
+sbs.gemFPP.m3.rmsv = 8
+
+sbs.gemFPP.m4.pedu = 1500
+sbs.gemFPP.m4.rmsu = 8
+sbs.gemFPP.m4.pedv = 1500
+sbs.gemFPP.m4.rmsv = 8
+
+sbs.gemFPP.m5.pedu = 1500
+sbs.gemFPP.m5.rmsu = 8
+sbs.gemFPP.m5.pedv = 1500
+sbs.gemFPP.m5.rmsv = 8
+
+sbs.gemFPP.m6.pedu = 1500
+sbs.gemFPP.m6.rmsu = 8
+sbs.gemFPP.m6.pedv = 1500
+sbs.gemFPP.m6.rmsv = 8
+
+sbs.gemFPP.m7.pedu = 1500
+sbs.gemFPP.m7.rmsu = 8
+sbs.gemFPP.m7.pedv = 1500
+sbs.gemFPP.m7.rmsv = 8
+
+sbs.gemFPP.m8.pedu = 1500
+sbs.gemFPP.m8.rmsu = 8
+sbs.gemFPP.m8.pedv = 1500
+sbs.gemFPP.m8.rmsv = 8
+
+sbs.gemFPP.m9.pedu = 1500
+sbs.gemFPP.m9.rmsu = 8
+sbs.gemFPP.m9.pedv = 1500
+sbs.gemFPP.m9.rmsv = 8
+
+sbs.gemFPP.m10.pedu = 1500
+sbs.gemFPP.m10.rmsu = 8
+sbs.gemFPP.m10.pedv = 1500
+sbs.gemFPP.m10.rmsv = 8
+
+sbs.gemFPP.m11.pedu = 1500
+sbs.gemFPP.m11.rmsu = 8
+sbs.gemFPP.m11.pedv = 1500
+sbs.gemFPP.m11.rmsv = 8
+
+sbs.gemFPP.m12.pedu = 1500
+sbs.gemFPP.m12.rmsu = 8
+sbs.gemFPP.m12.pedv = 1500
+sbs.gemFPP.m12.rmsv = 8
+
+sbs.gemFPP.m13.pedu = 1500
+sbs.gemFPP.m13.rmsu = 8
+sbs.gemFPP.m13.pedv = 1500
+sbs.gemFPP.m13.rmsv = 8
+
+sbs.gemFPP.m14.pedu = 1500
+sbs.gemFPP.m14.rmsu = 8
+sbs.gemFPP.m14.pedv = 1500
+sbs.gemFPP.m14.rmsv = 8
+
+sbs.gemFPP.m15.pedu = 1500
+sbs.gemFPP.m15.rmsu = 8
+sbs.gemFPP.m15.pedv = 1500
+sbs.gemFPP.m15.rmsv = 8
+
+sbs.gemFPP.m16.pedu = 1500
+sbs.gemFPP.m16.rmsu = 8
+sbs.gemFPP.m16.pedv = 1500
+sbs.gemFPP.m16.rmsv = 8
+
+sbs.gemFPP.m17.pedu = 1500
+sbs.gemFPP.m17.rmsu = 8
+sbs.gemFPP.m17.pedv = 1500
+sbs.gemFPP.m17.rmsv = 8
+
+sbs.gemFPP.m18.pedu = 1500
+sbs.gemFPP.m18.rmsu = 8
+sbs.gemFPP.m18.pedv = 1500
+sbs.gemFPP.m18.rmsv = 8
+
+sbs.gemFPP.m19.pedu = 1500
+sbs.gemFPP.m19.rmsu = 8
+sbs.gemFPP.m19.pedv = 1500
+sbs.gemFPP.m19.rmsv = 8
+
+sbs.gemFPP.m20.pedu = 1500
+sbs.gemFPP.m20.rmsu = 8
+sbs.gemFPP.m20.pedv = 1500
+sbs.gemFPP.m20.rmsv = 8
+
+sbs.gemFPP.m21.pedu = 1500
+sbs.gemFPP.m21.rmsu = 8
+sbs.gemFPP.m21.pedv = 1500
+sbs.gemFPP.m21.rmsv = 8
+
+sbs.gemFPP.m22.pedu = 1500
+sbs.gemFPP.m22.rmsu = 8
+sbs.gemFPP.m22.pedv = 1500
+sbs.gemFPP.m22.rmsv = 8
+
+sbs.gemFPP.m23.pedu = 1500
+sbs.gemFPP.m23.rmsu = 8
+sbs.gemFPP.m23.pedv = 1500
+sbs.gemFPP.m23.rmsv = 8
+
+sbs.gemFPP.m24.pedu = 1500
+sbs.gemFPP.m24.rmsu = 8
+sbs.gemFPP.m24.pedv = 1500
+sbs.gemFPP.m24.rmsv = 8
+
+sbs.gemFPP.m25.pedu = 1500
+sbs.gemFPP.m25.rmsu = 8
+sbs.gemFPP.m25.pedv = 1500
+sbs.gemFPP.m25.rmsv = 8
+
+sbs.gemFPP.m26.pedu = 1500
+sbs.gemFPP.m26.rmsu = 8
+sbs.gemFPP.m26.pedv = 1500
+sbs.gemFPP.m26.rmsv = 8
+
+sbs.gemFPP.m27.pedu = 1500
+sbs.gemFPP.m27.rmsu = 8
+sbs.gemFPP.m27.pedv = 1500
+sbs.gemFPP.m27.rmsv = 8
+
+sbs.gemFPP.m28.pedu = 1500
+sbs.gemFPP.m28.rmsu = 8
+sbs.gemFPP.m28.pedv = 1500
+sbs.gemFPP.m28.rmsv = 8
+
+sbs.gemFPP.m29.pedu = 1500
+sbs.gemFPP.m29.rmsu = 8
+sbs.gemFPP.m29.pedv = 1500
+sbs.gemFPP.m29.rmsv = 8
+
+sbs.gemFPP.m30.pedu = 1500
+sbs.gemFPP.m30.rmsu = 8
+sbs.gemFPP.m30.pedv = 1500
+sbs.gemFPP.m30.rmsv = 8
+
+sbs.gemFPP.m31.pedu = 1500
+sbs.gemFPP.m31.rmsu = 8
+sbs.gemFPP.m31.pedv = 1500
+sbs.gemFPP.m31.rmsv = 8
+
+
+sbs.gemFPP.m0.layer = 0
+sbs.gemFPP.m1.layer = 0
+sbs.gemFPP.m2.layer = 0
+sbs.gemFPP.m3.layer = 0
+
+sbs.gemFPP.m4.layer = 1
+sbs.gemFPP.m5.layer = 1
+sbs.gemFPP.m6.layer = 1
+sbs.gemFPP.m7.layer = 1
+
+sbs.gemFPP.m8.layer = 2
+sbs.gemFPP.m9.layer = 2
+sbs.gemFPP.m10.layer = 2
+sbs.gemFPP.m11.layer = 2
+
+sbs.gemFPP.m12.layer = 3
+sbs.gemFPP.m13.layer = 3
+sbs.gemFPP.m14.layer = 3
+sbs.gemFPP.m15.layer = 3
+
+sbs.gemFPP.m16.layer = 4
+sbs.gemFPP.m17.layer = 4
+sbs.gemFPP.m18.layer = 4
+sbs.gemFPP.m19.layer = 4
+
+sbs.gemFPP.m20.layer = 5
+sbs.gemFPP.m21.layer = 5
+sbs.gemFPP.m22.layer = 5
+sbs.gemFPP.m23.layer = 5
+
+sbs.gemFPP.m24.layer = 6
+sbs.gemFPP.m25.layer = 6
+sbs.gemFPP.m26.layer = 6
+sbs.gemFPP.m27.layer = 6
+
+sbs.gemFPP.m28.layer = 7
+sbs.gemFPP.m29.layer = 7
+sbs.gemFPP.m30.layer = 7
+sbs.gemFPP.m31.layer = 7
+
+#MC
+sbs.gemFPP.m0.apvmap = 3
+sbs.gemFPP.m1.apvmap = 3
+sbs.gemFPP.m2.apvmap = 3
+sbs.gemFPP.m3.apvmap = 3
+
+sbs.gemFPP.m4.apvmap = 3
+sbs.gemFPP.m5.apvmap = 3
+sbs.gemFPP.m6.apvmap = 3
+sbs.gemFPP.m7.apvmap = 3
+
+sbs.gemFPP.m8.apvmap = 3
+sbs.gemFPP.m9.apvmap = 3
+sbs.gemFPP.m10.apvmap = 3
+sbs.gemFPP.m11.apvmap = 3
+
+sbs.gemFPP.m12.apvmap = 3
+sbs.gemFPP.m13.apvmap = 3
+sbs.gemFPP.m14.apvmap = 3
+sbs.gemFPP.m15.apvmap = 3
+
+sbs.gemFPP.m16.apvmap = 3
+sbs.gemFPP.m17.apvmap = 3
+sbs.gemFPP.m18.apvmap = 3
+sbs.gemFPP.m19.apvmap = 3
+
+sbs.gemFPP.m20.apvmap = 3
+sbs.gemFPP.m21.apvmap = 3
+sbs.gemFPP.m22.apvmap = 3
+sbs.gemFPP.m23.apvmap = 3
+
+sbs.gemFPP.m24.apvmap = 3
+sbs.gemFPP.m25.apvmap = 3
+sbs.gemFPP.m26.apvmap = 3
+sbs.gemFPP.m27.apvmap = 3
+
+sbs.gemFPP.m28.apvmap = 3
+sbs.gemFPP.m29.apvmap = 3
+sbs.gemFPP.m30.apvmap = 3
+sbs.gemFPP.m31.apvmap = 3
+
+
+#sizes
+sbs.gemFPP.m0.size = 0.512 0.6144 0.001
+sbs.gemFPP.m1.size = 0.512 0.6144 0.001
+sbs.gemFPP.m2.size = 0.512 0.6144 0.001
+sbs.gemFPP.m3.size = 0.512 0.6144 0.001
+
+sbs.gemFPP.m4.size = 0.512 0.6144 0.001
+sbs.gemFPP.m5.size = 0.512 0.6144 0.001
+sbs.gemFPP.m6.size = 0.512 0.6144 0.001
+sbs.gemFPP.m7.size = 0.512 0.6144 0.001
+
+sbs.gemFPP.m8.size = 0.512 0.6144 0.001
+sbs.gemFPP.m9.size = 0.512 0.6144 0.001
+sbs.gemFPP.m10.size = 0.512 0.6144 0.001
+sbs.gemFPP.m11.size = 0.512 0.6144 0.001
+
+sbs.gemFPP.m12.size = 0.512 0.6144 0.001
+sbs.gemFPP.m13.size = 0.512 0.6144 0.001
+sbs.gemFPP.m14.size = 0.512 0.6144 0.001
+sbs.gemFPP.m15.size = 0.512 0.6144 0.001
+
+sbs.gemFPP.m16.size = 0.512 0.6144 0.001
+sbs.gemFPP.m17.size = 0.512 0.6144 0.001
+sbs.gemFPP.m18.size = 0.512 0.6144 0.001
+sbs.gemFPP.m19.size = 0.512 0.6144 0.001
+
+sbs.gemFPP.m20.size = 0.512 0.6144 0.001
+sbs.gemFPP.m21.size = 0.512 0.6144 0.001
+sbs.gemFPP.m22.size = 0.512 0.6144 0.001
+sbs.gemFPP.m23.size = 0.512 0.6144 0.001
+
+sbs.gemFPP.m24.size = 0.512 0.6144 0.001
+sbs.gemFPP.m25.size = 0.512 0.6144 0.001
+sbs.gemFPP.m26.size = 0.512 0.6144 0.001
+sbs.gemFPP.m27.size = 0.512 0.6144 0.001
+
+sbs.gemFPP.m28.size = 0.512 0.6144 0.001
+sbs.gemFPP.m29.size = 0.512 0.6144 0.001
+sbs.gemFPP.m30.size = 0.512 0.6144 0.001
+sbs.gemFPP.m31.size = 0.512 0.6144 0.001
+
+#positions #m0 and m4 have a temporary offset
+sbs.gemFPP.m0.position = -0.768 0.0 2.074
+sbs.gemFPP.m1.position = -0.256 0.0 2.074
+sbs.gemFPP.m2.position =  0.256 0.0 2.074
+sbs.gemFPP.m3.position =  0.768 0.0 2.074
+
+sbs.gemFPP.m4.position = -0.768 0.0 2.187
+sbs.gemFPP.m5.position = -0.256 0.0 2.187
+sbs.gemFPP.m6.position =  0.256 0.0 2.187
+sbs.gemFPP.m7.position =  0.768 0.0 2.187
+
+sbs.gemFPP.m8.position = -0.768 0.0 2.300
+sbs.gemFPP.m9.position = -0.256 0.0 2.300
+sbs.gemFPP.m10.position =  0.256 0.0 2.300
+sbs.gemFPP.m11.position =  0.768 0.0 2.300
+
+sbs.gemFPP.m12.position = -0.768 0.0 2.413
+sbs.gemFPP.m13.position = -0.256 0.0 2.413
+sbs.gemFPP.m14.position =  0.256 0.0 2.413
+sbs.gemFPP.m15.position =  0.768 0.0 2.413
+
+sbs.gemFPP.m16.position =  0.256 0.0 2.526
+sbs.gemFPP.m17.position =  0.768 0.0 2.526
+sbs.gemFPP.m18.position = -0.768 0.0 2.526
+sbs.gemFPP.m19.position = -0.256 0.0 2.526
+
+sbs.gemFPP.m20.position = -0.768 0.0 2.639
+sbs.gemFPP.m21.position = -0.256 0.0 2.639
+sbs.gemFPP.m22.position =  0.256 0.0 2.639
+sbs.gemFPP.m23.position =  0.768 0.0 2.639
+
+sbs.gemFPP.m24.position = -0.768 0.0 2.752
+sbs.gemFPP.m25.position = -0.256 0.0 2.752
+sbs.gemFPP.m26.position =  0.256 0.0 2.752
+sbs.gemFPP.m27.position =  0.768 0.0 2.752
+
+sbs.gemFPP.m28.position = -0.768 0.0 2.865
+sbs.gemFPP.m29.position = -0.256 0.0 2.865
+sbs.gemFPP.m30.position =  0.256 0.0 2.865
+sbs.gemFPP.m31.position =  0.768 0.0 2.865
+
+sbs.gemFPP.m0.angle = 0.0 0.0 0.0
+sbs.gemFPP.m1.angle = 0.0 0.0 0.0
+sbs.gemFPP.m2.angle = 0.0 0.0 0.0
+sbs.gemFPP.m3.angle = 0.0 0.0 0.0
+
+sbs.gemFPP.m4.angle = 0.0 0.0 0.0
+sbs.gemFPP.m5.angle = 0.0 0.0 0.0
+sbs.gemFPP.m6.angle = 0.0 0.0 0.0
+sbs.gemFPP.m7.angle = 0.0 0.0 0.0
+
+sbs.gemFPP.m8.angle = 0.0 0.0 0.0
+sbs.gemFPP.m9.angle = 0.0 0.0 0.0
+sbs.gemFPP.m10.angle = 0.0 0.0 0.0
+sbs.gemFPP.m11.angle = 0.0 0.0 0.0
+
+sbs.gemFPP.m12.angle = 0.0 0.0 0.0
+sbs.gemFPP.m13.angle = 0.0 0.0 0.0
+sbs.gemFPP.m14.angle = 0.0 0.0 0.0
+sbs.gemFPP.m15.angle = 0.0 0.0 0.0
+
+sbs.gemFPP.m16.angle = 0.0 0.0 0.0
+sbs.gemFPP.m17.angle = 0.0 0.0 0.0
+sbs.gemFPP.m18.angle = 0.0 0.0 0.0
+sbs.gemFPP.m19.angle = 0.0 0.0 0.0
+
+sbs.gemFPP.m20.angle = 0.0 0.0 0.0
+sbs.gemFPP.m21.angle = 0.0 0.0 0.0
+sbs.gemFPP.m22.angle = 0.0 0.0 0.0
+sbs.gemFPP.m23.angle = 0.0 0.0 0.0
+
+sbs.gemFPP.m24.angle = 0.0 0.0 0.0
+sbs.gemFPP.m25.angle = 0.0 0.0 0.0
+sbs.gemFPP.m26.angle = 0.0 0.0 0.0
+sbs.gemFPP.m27.angle = 0.0 0.0 0.0
+
+sbs.gemFPP.m28.angle = 0.0 0.0 0.0
+sbs.gemFPP.m29.angle = 0.0 0.0 0.0
+sbs.gemFPP.m30.angle = 0.0 0.0 0.0
+sbs.gemFPP.m31.angle = 0.0 0.0 0.0
+
+#angles
+# for the UVA X/Y modules the "X" axis coincides with the direction of transport coordinates but the "Y" axis is opposite the direction of transport coordinates:
+# as confirmed by Sean Jeffas:
+
+sbs.gemFPP.m0.uangle =  0.0
+sbs.gemFPP.m0.vangle = 90.0
+sbs.gemFPP.m1.uangle =  0.0
+sbs.gemFPP.m1.vangle = 90.0
+sbs.gemFPP.m2.uangle =  0.0
+sbs.gemFPP.m2.vangle = 90.0
+sbs.gemFPP.m3.uangle =  0.0
+sbs.gemFPP.m3.vangle = 90.0
+
+sbs.gemFPP.m4.uangle =  0.0
+sbs.gemFPP.m4.vangle = 90.0
+sbs.gemFPP.m5.uangle =  0.0
+sbs.gemFPP.m5.vangle = 90.0
+sbs.gemFPP.m6.uangle =  0.0
+sbs.gemFPP.m6.vangle = 90.0
+sbs.gemFPP.m7.uangle =  0.0
+sbs.gemFPP.m7.vangle = 90.0
+
+sbs.gemFPP.m8.uangle =  0.0
+sbs.gemFPP.m8.vangle = 90.0
+sbs.gemFPP.m9.uangle =  0.0
+sbs.gemFPP.m9.vangle = 90.0
+sbs.gemFPP.m10.uangle =  0.0
+sbs.gemFPP.m10.vangle = 90.0
+sbs.gemFPP.m11.uangle =  0.0
+sbs.gemFPP.m11.vangle = 90.0
+
+sbs.gemFPP.m12.uangle =  0.0
+sbs.gemFPP.m12.vangle = 90.0
+sbs.gemFPP.m13.uangle =  0.0
+sbs.gemFPP.m13.vangle = 90.0
+sbs.gemFPP.m14.uangle =  0.0
+sbs.gemFPP.m14.vangle = 90.0
+sbs.gemFPP.m15.uangle =  0.0
+sbs.gemFPP.m15.vangle = 90.0
+
+sbs.gemFPP.m16.uangle =  0.0
+sbs.gemFPP.m16.vangle = 90.0
+sbs.gemFPP.m17.uangle =  0.0
+sbs.gemFPP.m17.vangle = 90.0
+sbs.gemFPP.m18.uangle =  0.0
+sbs.gemFPP.m18.vangle = 90.0
+sbs.gemFPP.m19.uangle =  0.0
+sbs.gemFPP.m19.vangle = 90.0
+
+sbs.gemFPP.m20.uangle =  0.0
+sbs.gemFPP.m20.vangle = 90.0
+sbs.gemFPP.m21.uangle =  0.0
+sbs.gemFPP.m21.vangle = 90.0
+sbs.gemFPP.m22.uangle =  0.0
+sbs.gemFPP.m22.vangle = 90.0
+sbs.gemFPP.m23.uangle =  0.0
+sbs.gemFPP.m23.vangle = 90.0
+
+sbs.gemFPP.m24.uangle =  0.0
+sbs.gemFPP.m24.vangle = 90.0
+sbs.gemFPP.m25.uangle =  0.0
+sbs.gemFPP.m25.vangle = 90.0
+sbs.gemFPP.m26.uangle =  0.0
+sbs.gemFPP.m26.vangle = 90.0
+sbs.gemFPP.m27.uangle =  0.0
+sbs.gemFPP.m27.vangle = 90.0
+
+sbs.gemFPP.m28.uangle =  0.0
+sbs.gemFPP.m28.vangle = 90.0
+sbs.gemFPP.m29.uangle =  0.0
+sbs.gemFPP.m29.vangle = 90.0
+sbs.gemFPP.m30.uangle =  0.0
+sbs.gemFPP.m30.vangle = 90.0
+sbs.gemFPP.m31.uangle =  0.0
+sbs.gemFPP.m31.vangle = 90.0
+
+
+#nstrips
+sbs.gemFPP.m0.nstripsu = 1280
+sbs.gemFPP.m0.nstripsv = 1536
+sbs.gemFPP.m1.nstripsu = 1280
+sbs.gemFPP.m1.nstripsv = 1536
+sbs.gemFPP.m2.nstripsu = 1280
+sbs.gemFPP.m2.nstripsv = 1536
+sbs.gemFPP.m3.nstripsu = 1280
+sbs.gemFPP.m3.nstripsv = 1536
+
+sbs.gemFPP.m4.nstripsu = 1280
+sbs.gemFPP.m4.nstripsv = 1536
+sbs.gemFPP.m5.nstripsu = 1280
+sbs.gemFPP.m5.nstripsv = 1536
+sbs.gemFPP.m6.nstripsu = 1280
+sbs.gemFPP.m6.nstripsv = 1536
+sbs.gemFPP.m7.nstripsu = 1280
+sbs.gemFPP.m7.nstripsv = 1536
+
+sbs.gemFPP.m8.nstripsu = 1280
+sbs.gemFPP.m8.nstripsv = 1536
+sbs.gemFPP.m9.nstripsu = 1280
+sbs.gemFPP.m9.nstripsv = 1536
+sbs.gemFPP.m10.nstripsu = 1280
+sbs.gemFPP.m10.nstripsv = 1536
+sbs.gemFPP.m11.nstripsu = 1280
+sbs.gemFPP.m11.nstripsv = 1536
+
+sbs.gemFPP.m12.nstripsu = 1280
+sbs.gemFPP.m12.nstripsv = 1536
+sbs.gemFPP.m13.nstripsu = 1280
+sbs.gemFPP.m13.nstripsv = 1536
+sbs.gemFPP.m14.nstripsu = 1280
+sbs.gemFPP.m14.nstripsv = 1536
+sbs.gemFPP.m15.nstripsu = 1280
+sbs.gemFPP.m15.nstripsv = 1536
+
+sbs.gemFPP.m16.nstripsu = 1280
+sbs.gemFPP.m16.nstripsv = 1536
+sbs.gemFPP.m17.nstripsu = 1280
+sbs.gemFPP.m17.nstripsv = 1536
+sbs.gemFPP.m18.nstripsu = 1280
+sbs.gemFPP.m18.nstripsv = 1536
+sbs.gemFPP.m19.nstripsu = 1280
+sbs.gemFPP.m19.nstripsv = 1536
+
+sbs.gemFPP.m20.nstripsu = 1280
+sbs.gemFPP.m20.nstripsv = 1536
+sbs.gemFPP.m21.nstripsu = 1280
+sbs.gemFPP.m21.nstripsv = 1536
+sbs.gemFPP.m22.nstripsu = 1280
+sbs.gemFPP.m22.nstripsv = 1536
+sbs.gemFPP.m23.nstripsu = 1280
+sbs.gemFPP.m23.nstripsv = 1536
+
+sbs.gemFPP.m24.nstripsu = 1280
+sbs.gemFPP.m24.nstripsv = 1536
+sbs.gemFPP.m25.nstripsu = 1280
+sbs.gemFPP.m25.nstripsv = 1536
+sbs.gemFPP.m26.nstripsu = 1280
+sbs.gemFPP.m26.nstripsv = 1536
+sbs.gemFPP.m27.nstripsu = 1280
+sbs.gemFPP.m27.nstripsv = 1536
+
+sbs.gemFPP.m28.nstripsu = 1280
+sbs.gemFPP.m28.nstripsv = 1536
+sbs.gemFPP.m29.nstripsu = 1280
+sbs.gemFPP.m29.nstripsv = 1536
+sbs.gemFPP.m30.nstripsu = 1280
+sbs.gemFPP.m30.nstripsv = 1536
+sbs.gemFPP.m31.nstripsu = 1280
+sbs.gemFPP.m31.nstripsv = 1536
+
+
+
+# all modules have the same strip pitch along both dimensions, 0.4 mm:
+sbs.gemFPP.upitch = 0.0004
+sbs.gemFPP.vpitch = 0.0004
+
+# tracking parameters:
+sbs.gemFPP.threshold_sample = 50.0
+sbs.gemFPP.threshold_stripsum = 250.0
+sbs.gemFPP.threshold_clustersum = 500.0
+
+sbs.gemFPP.ADCasym_cut = 0.5
+sbs.gemFPP.deltat_cut = 30.0
+sbs.gemFPP.corrcoeff_cut = 0.5
+sbs.gemFPP.filterflag1D = 1
+sbs.gemFPP.filterflag2D = 0
+
+sbs.gemFPP.m0.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      21    0   0   0   0   0   0   0    0 # Strip    0- 127
+      21    0   0   0   1   0   1   0    0 # Strip  128- 255
+      21    0   0   0   2   0   2   0    0 # Strip  256- 383
+      21    0   0   0   3   0   3   0    0 # Strip  384- 511
+      21    0   0   0   4   0   4   0    0 # Strip  512- 639
+      21    0   0   0   5   0   5   0    0 # Strip  640- 767
+      21    0   0   0   6   0   6   0    0 # Strip  768- 895
+      21    0   0   0   7   0   7   0    0 # Strip  896-1023
+      21    0   0   0   8   0   8   0    0 # Strip 1024-1151
+      21    0   0   0   9   0   9   0    0 # Strip 1152-1279
+      21    0   0   0  10   0   0   0    1 # Strip    0- 127
+      21    0   0   0  11   0   1   0    1 # Strip  128- 255
+      21    0   0   0  12   0   2   0    1 # Strip  256- 383
+      21    0   0   0  13   0   3   0    1 # Strip  384- 511
+      21    0   0   0  14   0   4   0    1 # Strip  512- 639
+      21    0   0   0  15   0   5   0    1 # Strip  640- 767
+      21    1   1   0   0   0   6   0    1 # Strip  768- 895
+      21    1   1   0   1   0   7   0    1 # Strip  896-1023
+      21    1   1   0   2   0   8   0    1 # Strip 1024-1151
+      21    1   1   0   3   0   9   0    1 # Strip 1152-1279
+      21    1   1   0   4   0  10   0    1 # Strip 1280-1407
+      21    1   1   0   5   0  11   0    1 # Strip 1408-1535
+
+sbs.gemFPP.m1.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      21    1   1   0   6   0   0   0    0 # Strip 
+      21    1   1   0   7   0   1   0    0 # Strip 
+      21    1   1   0   8   0   2   0    0 # Strip 
+      21    1   1   0   9   0   3   0    0 # Strip 
+      21    1   1   0  10   0   4   0    0 # Strip 
+      21    1   1   0  11   0   5   0    0 # Strip 
+      21    1   1   0  12   0   6   0    0 # Strip 
+      21    1   1   0  13   0   7   0    0 # Strip 
+      21    1   1   0  14   0   8   0    0 # Strip 
+      21    1   1   0  15   0   9   0    0 # Strip 
+      21    2   2   0   0   0   0   0    1 # Strip 
+      21    2   2   0   1   0   1   0    1 # Strip 
+      21    2   2   0   2   0   2   0    1 # Strip 
+      21    2   2   0   3   0   3   0    1 # Strip 
+      21    2   2   0   4   0   4   0    1 # Strip 
+      21    2   2   0   5   0   5   0    1 # Strip 
+      21    2   2   0   6   0   6   0    1 # Strip 
+      21    2   2   0   7   0   7   0    1 # Strip 
+      21    2   2   0   8   0   8   0    1 # Strip 
+      21    2   2   0   9   0   9   0    1 # Strip 
+      21    2   2   0  10   0  10   0    1 # Strip 
+      21    2   2   0  11   0  11   0    1 # Strip 
+
+sbs.gemFPP.m2.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      21    2   2   0  12   0   0   0    0 # Strip 
+      21    2   2   0  13   0   1   0    0 # Strip 
+      21    2   2   0  14   0   2   0    0 # Strip 
+      21    2   2   0  15   0   3   0    0 # Strip 
+      21    3   3   0   0   0   4   0    0 # Strip 
+      21    3   3   0   1   0   5   0    0 # Strip 
+      21    3   3   0   2   0   6   0    0 # Strip 
+      21    3   3   0   3   0   7   0    0 # Strip 
+      21    3   3   0   4   0   8   0    0 # Strip 
+      21    3   3   0   5   0   9   0    0 # Strip 
+      21    3   3   0   6   0   0   0    1 # Strip 
+      21    3   3   0   7   0   1   0    1 # Strip 
+      21    3   3   0   8   0   2   0    1 # Strip 
+      21    3   3   0   9   0   3   0    1 # Strip 
+      21    3   3   0  10   0   4   0    1 # Strip 
+      21    3   3   0  11   0   5   0    1 # Strip 
+      21    3   3   0  12   0   6   0    1 # Strip 
+      21    3   3   0  13   0   7   0    1 # Strip 
+      21    3   3   0  14   0   8   0    1 # Strip 
+      21    3   3   0  15   0   9   0    1 # Strip 
+      21    4   4   0   0   0  10   0    1 # Strip 
+      21    4   4   0   1   0  11   0    1 # Strip 
+
+sbs.gemFPP.m3.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      21    4   4   0   2   0   0   0    0 # Strip 
+      21    4   4   0   3   0   1   0    0 # Strip 
+      21    4   4   0   4   0   2   0    0 # Strip 
+      21    4   4   0   5   0   3   0    0 # Strip 
+      21    4   4   0   6   0   4   0    0 # Strip 
+      21    4   4   0   7   0   5   0    0 # Strip 
+      21    4   4   0   8   0   6   0    0 # Strip 
+      21    4   4   0   9   0   7   0    0 # Strip 
+      21    4   4   0  10   0   8   0    0 # Strip 
+      21    4   4   0  11   0   9   0    0 # Strip 
+      21    4   4   0  12   0   0   0    1 # Strip 
+      21    4   4   0  13   0   1   0    1 # Strip 
+      21    4   4   0  14   0   2   0    1 # Strip 
+      21    4   4   0  15   0   3   0    1 # Strip 
+      21    5   5   0   0   0   4   0    1 # Strip 
+      21    5   5   0   1   0   5   0    1 # Strip 
+      21    5   5   0   2   0   6   0    1 # Strip 
+      21    5   5   0   3   0   7   0    1 # Strip 
+      21    5   5   0   4   0   8   0    1 # Strip 
+      21    5   5   0   5   0   9   0    1 # Strip 
+      21    5   5   0   6   0  10   0    1 # Strip 
+      21    5   5   0   7   0  11   0    1 # Strip 
+
+
+sbs.gemFPP.m4.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      21    5   5   0   8   0   0   0    0 # Strip 
+      21    5   5   0   9   0   1   0    0 # Strip 
+      21    5   5   0  10   0   2   0    0 # Strip 
+      21    5   5   0  11   0   3   0    0 # Strip 
+      21    5   5   0  12   0   4   0    0 # Strip 
+      21    5   5   0  13   0   5   0    0 # Strip 
+      21    5   5   0  14   0   6   0    0 # Strip 
+      21    5   5   0  15   0   7   0    0 # Strip 
+      21    6   6   0   0   0   8   0    0 # Strip 
+      21    6   6   0   1   0   9   0    0 # Strip 
+      21    6   6   0   2   0   0   0    1 # Strip 
+      21    6   6   0   3   0   1   0    1 # Strip 
+      21    6   6   0   4   0   2   0    1 # Strip 
+      21    6   6   0   5   0   3   0    1 # Strip 
+      21    6   6   0   6   0   4   0    1 # Strip 
+      21    6   6   0   7   0   5   0    1 # Strip 
+      21    6   6   0   8   0   6   0    1 # Strip 
+      21    6   6   0   9   0   7   0    1 # Strip 
+      21    6   6   0  10   0   8   0    1 # Strip 
+      21    6   6   0  11   0   9   0    1 # Strip 
+      21    6   6   0  12   0  10   0    1 # Strip 
+      21    6   6   0  13   0  11   0    1 # Strip 
+
+sbs.gemFPP.m5.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      21    6   6   0  14   0   0   0    0 # Strip    0- 127
+      21    6   6   0  15   0   1   0    0 # Strip  128- 255
+      21    7   7   0   0   0   2   0    0 # Strip  256- 383
+      21    7   7   0   1   0   3   0    0 # Strip  384- 511
+      21    7   7   0   2   0   4   0    0 # Strip  512- 639
+      21    7   7   0   3   0   5   0    0 # Strip  640- 767
+      21    7   7   0   4   0   6   0    0 # Strip  768- 895
+      21    7   7   0   5   0   7   0    0 # Strip  896-1023
+      21    7   7   0   6   0   8   0    0 # Strip 1024-1151
+      21    7   7   0   7   0   9   0    0 # Strip 1152-1279
+      21    7   7   0   8   0   0   0    1 # Strip 
+      21    7   7   0   9   0   1   0    1 # Strip 
+      21    7   7   0  10   0   2   0    1 # Strip 
+      21    7   7   0  11   0   3   0    1 # Strip 
+      21    7   7   0  12   0   4   0    1 # Strip 
+      21    7   7   0  13   0   5   0    1 # Strip 
+      21    7   7   0  14   0   6   0    1 # Strip 
+      21    7   7   0  15   0   7   0    1 # Strip 
+      21    8   8   0   0   0   8   0    1 # Strip 
+      21    8   8   0   1   0   9   0    1 # Strip 
+      21    8   8   0   2   0  10   0    1 # Strip 
+      21    8   8   0   3   0  11   0    1 # Strip 
+
+sbs.gemFPP.m6.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      21    8   8   0   4   0   0   0    0 # Strip 
+      21    8   8   0   5   0   1   0    0 # Strip 
+      21    8   8   0   6   0   2   0    0 # Strip 
+      21    8   8   0   7   0   3   0    0 # Strip 
+      21    8   8   0   8   0   4   0    0 # Strip 
+      21    8   8   0   9   0   5   0    0 # Strip 
+      21    8   8   0  10   0   6   0    0 # Strip 
+      21    8   8   0  11   0   7   0    0 # Strip 
+      21    8   8   0  12   0   8   0    0 # Strip 
+      21    8   8   0  13   0   9   0    0 # Strip 
+      21    8   8   0  14   0   0   0    1 # Strip    0- 127
+      21    8   8   0  15   0   1   0    1 # Strip  128- 255
+      21    9   9   0   0   0   2   0    1 # Strip  256- 383
+      21    9   9   0   1   0   3   0    1 # Strip  384- 511
+      21    9   9   0   2   0   4   0    1 # Strip  512- 639
+      21    9   9   0   3   0   5   0    1 # Strip  640- 767
+      21    9   9   0   4   0   6   0    1 # Strip  768- 895
+      21    9   9   0   5   0   7   0    1 # Strip  896-1023
+      21    9   9   0   6   0   8   0    1 # Strip 1024-1151
+      21    9   9   0   7   0   9   0    1 # Strip 1152-1279
+      21    9   9   0   8   0  10   0    1 # Strip 1280-1407
+      21    9   9   0   9   0  11   0    1 # Strip 1408-1535
+
+sbs.gemFPP.m7.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      21    9   9   0  10   0   0   0    0 # Strip    0- 127
+      21    9   9   0  11   0   1   0    0 # Strip  128- 255
+      21    9   9   0  12   0   2   0    0 # Strip 
+      21    9   9   0  13   0   3   0    0 # Strip 
+      21    9   9   0  14   0   4   0    0 # Strip 
+      21    9   9   0  15   0   5   0    0 # Strip 
+      21   10  10   0   0   0   6   0    0 # Strip 
+      21   10  10   0   1   0   7   0    0 # Strip 
+      21   10  10   0   2   0   8   0    0 # Strip 
+      21   10  10   0   3   0   9   0    0 # Strip 
+      21   10  10   0   4   0   0   0    1 # Strip    0- 127
+      21   10  10   0   5   0   1   0    1 # Strip  128- 255
+      21   10  10   0   6   0   2   0    1 # Strip  256- 383
+      21   10  10   0   7   0   3   0    1 # Strip  384- 511
+      21   10  10   0   8   0   4   0    1 # Strip  512- 639
+      21   10  10   0   9   0   5   0    1 # Strip  640- 767
+      21   10  10   0  10   0   6   0    1 # Strip  768- 895
+      21   10  10   0  11   0   7   0    1 # Strip  896-1023
+      21   10  10   0  12   0   8   0    1 # Strip 1024-1151
+      21   10  10   0  13   0   9   0    1 # Strip 1152-1279
+      21   10  10   0  14   0  10   0    1 # Strip 1280-1407
+      21   10  10   0  15   0  11   0    1 # Strip 1408-1535
+
+
+sbs.gemFPP.m8.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      21   11  11   0   0   0   0   0    0 # Strip 
+      21   11  11   0   1   0   1   0    0 # Strip 
+      21   11  11   0   2   0   2   0    0 # Strip 
+      21   11  11   0   3   0   3   0    0 # Strip 
+      21   11  11   0   4   0   4   0    0 # Strip 
+      21   11  11   0   5   0   5   0    0 # Strip 
+      21   11  11   0   6   0   6   0    0 # Strip 
+      21   11  11   0   7   0   7   0    0 # Strip 
+      21   11  11   0   8   0   8   0    0 # Strip 
+      21   11  11   0   9   0   9   0    0 # Strip 
+      21   11  11   0  10   0   0   0    1 # Strip 
+      21   11  11   0  11   0   1   0    1 # Strip 
+      21   11  11   0  12   0   2   0    1 # Strip 
+      21   11  11   0  13   0   3   0    1 # Strip 
+      21   11  11   0  14   0   4   0    1 # Strip 
+      21   11  11   0  15   0   5   0    1 # Strip 
+      21   12  12   0   0   0   6   0    1 # Strip 
+      21   12  12   0   1   0   7   0    1 # Strip 
+      21   12  12   0   2   0   8   0    1 # Strip 
+      21   12  12   0   3   0   9   0    1 # Strip 
+      21   12  12   0   4   0  10   0    1 # Strip 
+      21   12  12   0   5   0  11   0    1 # Strip
+
+sbs.gemFPP.m9.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      21   12  12   0   6   0   0   0    0 # Strip 
+      21   12  12   0   7   0   1   0    0 # Strip 
+      21   12  12   0   8   0   2   0    0 # Strip 
+      21   12  12   0   9   0   3   0    0 # Strip 
+      21   12  12   0  10   0   4   0    0 # Strip 
+      21   12  12   0  11   0   5   0    0 # Strip 
+      21   12  12   0  12   0   6   0    0 # Strip 
+      21   12  12   0  13   0   7   0    0 # Strip 
+      21   12  12   0  14   0   8   0    0 # Strip 
+      21   12  12   0  15   0   9   0    0 # Strip 
+      21   13  13   0   0   0   0   0    1 # Strip 
+      21   13  13   0   1   0   1   0    1 # Strip 
+      21   13  13   0   2   0   2   0    1 # Strip 
+      21   13  13   0   3   0   3   0    1 # Strip 
+      21   13  13   0   4   0   4   0    1 # Strip 
+      21   13  13   0   5   0   5   0    1 # Strip 
+      21   13  13   0   6   0   6   0    1 # Strip 
+      21   13  13   0   7   0   7   0    1 # Strip 
+      21   13  13   0   8   0   8   0    1 # Strip 
+      21   13  13   0   9   0   9   0    1 # Strip 
+      21   13  13   0  10   0  10   0    1 # Strip 
+      21   13  13   0  11   0  11   0    1 # Strip 
+
+sbs.gemFPP.m10.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      21   13  13   0  12   0   0   0    0 # Strip    0- 127
+      21   13  13   0  13   0   1   0    0 # Strip  128- 255
+      21   13  13   0  14   0   2   0    0 # Strip  256- 383
+      21   13  13   0  15   0   3   0    0 # Strip  384- 511
+      21   14  14   0   0   0   4   0    0 # Strip  512- 639
+      21   14  14   0   1   0   5   0    0 # Strip  640- 767
+      21   14  14   0   2   0   6   0    0 # Strip  768- 895
+      21   14  14   0   3   0   7   0    0 # Strip  896-1023
+      21   14  14   0   4   0   8   0    0 # Strip 1024-1151
+      21   14  14   0   5   0   9   0    0 # Strip 1152-1279
+      21   14  14   0   6   0   0   0    1 # Strip 
+      21   14  14   0   7   0   1   0    1 # Strip 
+      21   14  14   0   8   0   2   0    1 # Strip 
+      21   14  14   0   9   0   3   0    1 # Strip 
+      21   14  14   0  10   0   4   0    1 # Strip 
+      21   14  14   0  11   0   5   0    1 # Strip 
+      21   14  14   0  12   0   6   0    1 # Strip 
+      21   14  14   0  13   0   7   0    1 # Strip 
+      21   14  14   0  14   0   8   0    1 # Strip 
+      21   14  14   0  15   0   9   0    1 # Strip 
+      21   15  15   0   0   0  10   0    1 # Strip 
+      21   15  15   0   1   0  11   0    1 # Strip 
+
+sbs.gemFPP.m11.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      21   15  15   0   2   0   0   0    0 # Strip 
+      21   15  15   0   3   0   1   0    0 # Strip 
+      21   15  15   0   4   0   2   0    0 # Strip 
+      21   15  15   0   5   0   3   0    0 # Strip 
+      21   15  15   0   6   0   4   0    0 # Strip 
+      21   15  15   0   7   0   5   0    0 # Strip 
+      21   15  15   0   8   0   6   0    0 # Strip 
+      21   15  15   0   9   0   7   0    0 # Strip 
+      21   15  15   0  10   0   8   0    0 # Strip 
+      21   15  15   0  11   0   9   0    0 # Strip 
+      21   15  15   0  12   0   0   0    1 # Strip 
+      21   15  15   0  13   0   1   0    1 # Strip 
+      21   15  15   0  14   0   2   0    1 # Strip 
+      21   15  15   0  15   0   3   0    1 # Strip 
+      21   16  16   0   0   0   4   0    1 # Strip 
+      21   16  16   0   1   0   5   0    1 # Strip 
+      21   16  16   0   2   0   6   0    1 # Strip 
+      21   16  16   0   3   0   7   0    1 # Strip 
+      21   16  16   0   4   0   8   0    1 # Strip 
+      21   16  16   0   5   0   9   0    1 # Strip 
+      21   16  16   0   6   0  10   0    1 # Strip 
+      21   16  16   0   7   0  11   0    1 # Strip 
+
+
+sbs.gemFPP.m12.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      21   16  16   0   8   0   0   0    0 # Strip 
+      21   16  16   0   9   0   1   0    0 # Strip 
+      21   16  16   0  10   0   2   0    0 # Strip 
+      21   16  16   0  11   0   3   0    0 # Strip 
+      21   16  16   0  12   0   4   0    0 # Strip 
+      21   16  16   0  13   0   5   0    0 # Strip 
+      21   16  16   0  14   0   6   0    0 # Strip 
+      21   16  16   0  15   0   7   0    0 # Strip 
+      21   17  17   0   0   0   8   0    0 # Strip 
+      21   17  17   0   1   0   9   0    0 # Strip 
+      21   17  17   0   2   0   0   0    1 # Strip 
+      21   17  17   0   3   0   1   0    1 # Strip 
+      21   17  17   0   4   0   2   0    1 # Strip 
+      21   17  17   0   5   0   3   0    1 # Strip 
+      21   17  17   0   6   0   4   0    1 # Strip 
+      21   17  17   0   7   0   5   0    1 # Strip 
+      21   17  17   0   8   0   6   0    1 # Strip 
+      21   17  17   0   9   0   7   0    1 # Strip 
+      21   17  17   0  10   0   8   0    1 # Strip 
+      21   17  17   0  11   0   9   0    1 # Strip 
+      21   17  17   0  12   0  10   0    1 # Strip 
+      21   17  17   0  13   0  11   0    1 # Strip 
+
+sbs.gemFPP.m13.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      21   17  17   0  14   0   0   0    0 # Strip 
+      21   17  17   0  15   0   1   0    0 # Strip 
+      21   18  18   0   0   0   2   0    0 # Strip 
+      21   18  18   0   1   0   3   0    0 # Strip 
+      21   18  18   0   2   0   4   0    0 # Strip 
+      21   18  18   0   3   0   5   0    0 # Strip 
+      21   18  18   0   4   0   6   0    0 # Strip 
+      21   18  18   0   5   0   7   0    0 # Strip 
+      21   18  18   0   6   0   8   0    0 # Strip 
+      21   18  18   0   7   0   9   0    0 # Strip 
+      21   18  18   0   8   0   0   0    1 # Strip 
+      21   18  18   0   9   0   1   0    1 # Strip 
+      21   18  18   0  10   0   2   0    1 # Strip 
+      21   18  18   0  11   0   3   0    1 # Strip 
+      21   18  18   0  12   0   4   0    1 # Strip 
+      21   18  18   0  13   0   5   0    1 # Strip 
+      21   18  18   0  14   0   6   0    1 # Strip 
+      21   18  18   0  15   0   7   0    1 # Strip 
+      21   19  19   0   0   0   8   0    1 # Strip 
+      21   19  19   0   1   0   9   0    1 # Strip 
+      21   19  19   0   2   0  10   0    1 # Strip 
+      21   19  19   0   3   0  11   0    1 # Strip 
+
+sbs.gemFPP.m14.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      22    0   0   0   0   0   0   0    0 # Strip 
+      22    0   0   0   1   0   1   0    0 # Strip 
+      22    0   0   0   2   0   2   0    0 # Strip 
+      22    0   0   0   3   0   3   0    0 # Strip 
+      22    0   0   0   4   0   4   0    0 # Strip 
+      22    0   0   0   5   0   5   0    0 # Strip 
+      22    0   0   0   6   0   6   0    0 # Strip 
+      22    0   0   0   7   0   7   0    0 # Strip 
+      22    0   0   0   8   0   8   0    0 # Strip 
+      22    0   0   0   9   0   9   0    0 # Strip 
+      22    0   0   0  10   0   0   0    1 # Strip 
+      22    0   0   0  11   0   1   0    1 # Strip 
+      22    0   0   0  12   0   2   0    1 # Strip 
+      22    0   0   0  13   0   3   0    1 # Strip 
+      22    0   0   0  14   0   4   0    1 # Strip 
+      22    0   0   0  15   0   5   0    1 # Strip 
+      22    1   1   0   0   0   6   0    1 # Strip 
+      22    1   1   0   1   0   7   0    1 # Strip 
+      22    1   1   0   2   0   8   0    1 # Strip 
+      22    1   1   0   3   0   9   0    1 # Strip 
+      22    1   1   0   4   0  10   0    1 # Strip 
+      22    1   1   0   5   0  11   0    1 # Strip
+
+sbs.gemFPP.m15.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      22    1   1   0   6   0   0   0    0 # Strip 
+      22    1   1   0   7   0   1   0    0 # Strip 
+      22    1   1   0   8   0   2   0    0 # Strip 
+      22    1   1   0   9   0   3   0    0 # Strip 
+      22    1   1   0  10   0   4   0    0 # Strip 
+      22    1   1   0  11   0   5   0    0 # Strip 
+      22    1   1   0  12   0   6   0    0 # Strip 
+      22    1   1   0  13   0   7   0    0 # Strip 
+      22    1   1   0  14   0   8   0    0 # Strip 
+      22    1   1   0  15   0   9   0    0 # Strip 
+      22    2   2   0   0   0   0   0    1 # Strip 
+      22    2   2   0   1   0   1   0    1 # Strip 
+      22    2   2   0   2   0   2   0    1 # Strip 
+      22    2   2   0   3   0   3   0    1 # Strip 
+      22    2   2   0   4   0   4   0    1 # Strip 
+      22    2   2   0   5   0   5   0    1 # Strip 
+      22    2   2   0   6   0   6   0    1 # Strip 
+      22    2   2   0   7   0   7   0    1 # Strip 
+      22    2   2   0   8   0   8   0    1 # Strip 
+      22    2   2   0   9   0   9   0    1 # Strip 
+      22    2   2   0  10   0  10   0    1 # Strip 
+      22    2   2   0  11   0  11   0    1 # Strip 
+
+sbs.gemFPP.m16.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      22    2   2   0  12   0   0   0    0 # Strip 
+      22    2   2   0  13   0   1   0    0 # Strip 
+      22    2   2   0  14   0   2   0    0 # Strip 
+      22    2   2   0  15   0   3   0    0 # Strip 
+      22    3   3   0   0   0   4   0    0 # Strip 
+      22    3   3   0   1   0   5   0    0 # Strip 
+      22    3   3   0   2   0   6   0    0 # Strip 
+      22    3   3   0   3   0   7   0    0 # Strip 
+      22    3   3   0   4   0   8   0    0 # Strip 
+      22    3   3   0   5   0   9   0    0 # Strip 
+      22    3   3   0   6   0   0   0    1 # Strip 
+      22    3   3   0   7   0   1   0    1 # Strip 
+      22    3   3   0   8   0   2   0    1 # Strip 
+      22    3   3   0   9   0   3   0    1 # Strip 
+      22    3   3   0  10   0   4   0    1 # Strip 
+      22    3   3   0  11   0   5   0    1 # Strip 
+      22    3   3   0  12   0   6   0    1 # Strip 
+      22    3   3   0  13   0   7   0    1 # Strip 
+      22    3   3   0  14   0   8   0    1 # Strip 
+      22    3   3   0  15   0   9   0    1 # Strip 
+      22    4   4   0   0   0  10   0    1 # Strip 
+      22    4   4   0   1   0  11   0    1 # Strip 
+
+sbs.gemFPP.m17.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      22    4   4   0   2   0   0   0    0 # Strip 
+      22    4   4   0   3   0   1   0    0 # Strip 
+      22    4   4   0   4   0   2   0    0 # Strip 
+      22    4   4   0   5   0   3   0    0 # Strip 
+      22    4   4   0   6   0   4   0    0 # Strip 
+      22    4   4   0   7   0   5   0    0 # Strip 
+      22    4   4   0   8   0   6   0    0 # Strip 
+      22    4   4   0   9   0   7   0    0 # Strip 
+      22    4   4   0  10   0   8   0    0 # Strip 
+      22    4   4   0  11   0   9   0    0 # Strip 
+      22    4   4   0  12   0   0   0    1 # Strip 
+      22    4   4   0  13   0   1   0    1 # Strip 
+      22    4   4   0  14   0   2   0    1 # Strip 
+      22    4   4   0  15   0   3   0    1 # Strip 
+      22    5   5   0   0   0   4   0    1 # Strip 
+      22    5   5   0   1   0   5   0    1 # Strip 
+      22    5   5   0   2   0   6   0    1 # Strip 
+      22    5   5   0   3   0   7   0    1 # Strip 
+      22    5   5   0   4   0   8   0    1 # Strip 
+      22    5   5   0   5   0   9   0    1 # Strip 
+      22    5   5   0   6   0  10   0    1 # Strip 
+      22    5   5   0   7   0  11   0    1 # Strip 
+
+sbs.gemFPP.m18.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      22    5   5   0   8   0   0   0    0 # Strip 
+      22    5   5   0   9   0   1   0    0 # Strip 
+      22    5   5   0  10   0   2   0    0 # Strip 
+      22    5   5   0  11   0   3   0    0 # Strip 
+      22    5   5   0  12   0   4   0    0 # Strip 
+      22    5   5   0  13   0   5   0    0 # Strip 
+      22    5   5   0  14   0   6   0    0 # Strip 
+      22    5   5   0  15   0   7   0    0 # Strip 
+      22    6   6   0   0   0   8   0    0 # Strip 
+      22    6   6   0   1   0   9   0    0 # Strip 
+      22    6   6   0   2   0   0   0    1 # Strip 
+      22    6   6   0   3   0   1   0    1 # Strip 
+      22    6   6   0   4   0   2   0    1 # Strip 
+      22    6   6   0   5   0   3   0    1 # Strip 
+      22    6   6   0   6   0   4   0    1 # Strip 
+      22    6   6   0   7   0   5   0    1 # Strip 
+      22    6   6   0   8   0   6   0    1 # Strip 
+      22    6   6   0   9   0   7   0    1 # Strip 
+      22    6   6   0  10   0   8   0    1 # Strip 
+      22    6   6   0  11   0   9   0    1 # Strip 
+      22    6   6   0  12   0  10   0    1 # Strip 
+      22    6   6   0  13   0  11   0    1 # Strip 
+
+sbs.gemFPP.m19.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      22    6   6   0  14   0   0   0    0 # Strip    0- 127
+      22    6   6   0  15   0   1   0    0 # Strip  128- 255
+      22    7   7   0   0   0   2   0    0 # Strip  256- 383
+      22    7   7   0   1   0   3   0    0 # Strip  384- 511
+      22    7   7   0   2   0   4   0    0 # Strip  512- 639
+      22    7   7   0   3   0   5   0    0 # Strip  640- 767
+      22    7   7   0   4   0   6   0    0 # Strip  768- 895
+      22    7   7   0   5   0   7   0    0 # Strip  896-1023
+      22    7   7   0   6   0   8   0    0 # Strip 1024-1151
+      22    7   7   0   7   0   9   0    0 # Strip 1152-1279
+      22    7   7   0   8   0   0   0    1 # Strip 
+      22    7   7   0   9   0   1   0    1 # Strip 
+      22    7   7   0  10   0   2   0    1 # Strip 
+      22    7   7   0  11   0   3   0    1 # Strip 
+      22    7   7   0  12   0   4   0    1 # Strip 
+      22    7   7   0  13   0   5   0    1 # Strip 
+      22    7   7   0  14   0   6   0    1 # Strip 
+      22    7   7   0  15   0   7   0    1 # Strip 
+      22    8   8   0   0   0   8   0    1 # Strip 
+      22    8   8   0   1   0   9   0    1 # Strip 
+      22    8   8   0   2   0  10   0    1 # Strip 
+      22    8   8   0   3   0  11   0    1 # Strip 
+
+sbs.gemFPP.m20.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      22    8   8   0   4   0   0   0    0 # Strip 
+      22    8   8   0   5   0   1   0    0 # Strip 
+      22    8   8   0   6   0   2   0    0 # Strip 
+      22    8   8   0   7   0   3   0    0 # Strip 
+      22    8   8   0   8   0   4   0    0 # Strip 
+      22    8   8   0   9   0   5   0    0 # Strip 
+      22    8   8   0  10   0   6   0    0 # Strip 
+      22    8   8   0  11   0   7   0    0 # Strip 
+      22    8   8   0  12   0   8   0    0 # Strip 
+      22    8   8   0  13   0   9   0    0 # Strip 
+      22    8   8   0  14   0   0   0    1 # Strip    0- 127
+      22    8   8   0  15   0   1   0    1 # Strip  128- 255
+      22    9   9   0   0   0   2   0    1 # Strip  256- 383
+      22    9   9   0   1   0   3   0    1 # Strip  384- 511
+      22    9   9   0   2   0   4   0    1 # Strip  512- 639
+      22    9   9   0   3   0   5   0    1 # Strip  640- 767
+      22    9   9   0   4   0   6   0    1 # Strip  768- 895
+      22    9   9   0   5   0   7   0    1 # Strip  896-1023
+      22    9   9   0   6   0   8   0    1 # Strip 1024-1151
+      22    9   9   0   7   0   9   0    1 # Strip 1152-1279
+      22    9   9   0   8   0  10   0    1 # Strip 1280-1407
+      22    9   9   0   9   0  11   0    1 # Strip 1408-1535
+
+sbs.gemFPP.m21.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      22    9   9   0  10   0   0   0    0 # Strip    0- 127
+      22    9   9   0  11   0   1   0    0 # Strip  128- 255
+      22    9   9   0  12   0   2   0    0 # Strip 
+      22    9   9   0  13   0   3   0    0 # Strip 
+      22    9   9   0  14   0   4   0    0 # Strip 
+      22    9   9   0  15   0   5   0    0 # Strip 
+      22   10  10   0   0   0   6   0    0 # Strip 
+      22   10  10   0   1   0   7   0    0 # Strip 
+      22   10  10   0   2   0   8   0    0 # Strip 
+      22   10  10   0   3   0   9   0    0 # Strip 
+      22   10  10   0   4   0   0   0    1 # Strip    0- 127
+      22   10  10   0   5   0   1   0    1 # Strip  128- 255
+      22   10  10   0   6   0   2   0    1 # Strip  256- 383
+      22   10  10   0   7   0   3   0    1 # Strip  384- 511
+      22   10  10   0   8   0   4   0    1 # Strip  512- 639
+      22   10  10   0   9   0   5   0    1 # Strip  640- 767
+      22   10  10   0  10   0   6   0    1 # Strip  768- 895
+      22   10  10   0  11   0   7   0    1 # Strip  896-1023
+      22   10  10   0  12   0   8   0    1 # Strip 1024-1151
+      22   10  10   0  13   0   9   0    1 # Strip 1152-1279
+      22   10  10   0  14   0  10   0    1 # Strip 1280-1407
+      22   10  10   0  15   0  11   0    1 # Strip 1408-1535
+
+
+sbs.gemFPP.m22.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      22   11  11   0   0   0   0   0    0 # Strip 
+      22   11  11   0   1   0   1   0    0 # Strip 
+      22   11  11   0   2   0   2   0    0 # Strip 
+      22   11  11   0   3   0   3   0    0 # Strip 
+      22   11  11   0   4   0   4   0    0 # Strip 
+      22   11  11   0   5   0   5   0    0 # Strip 
+      22   11  11   0   6   0   6   0    0 # Strip 
+      22   11  11   0   7   0   7   0    0 # Strip 
+      22   11  11   0   8   0   8   0    0 # Strip 
+      22   11  11   0   9   0   9   0    0 # Strip 
+      22   11  11   0  10   0   0   0    1 # Strip 
+      22   11  11   0  11   0   1   0    1 # Strip 
+      22   11  11   0  12   0   2   0    1 # Strip 
+      22   11  11   0  13   0   3   0    1 # Strip 
+      22   11  11   0  14   0   4   0    1 # Strip 
+      22   11  11   0  15   0   5   0    1 # Strip 
+      22   12  12   0   0   0   6   0    1 # Strip 
+      22   12  12   0   1   0   7   0    1 # Strip 
+      22   12  12   0   2   0   8   0    1 # Strip 
+      22   12  12   0   3   0   9   0    1 # Strip 
+      22   12  12   0   4   0  10   0    1 # Strip 
+      22   12  12   0   5   0  11   0    1 # Strip
+
+sbs.gemFPP.m23.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      22   12  12   0   6   0   0   0    0 # Strip 
+      22   12  12   0   7   0   1   0    0 # Strip 
+      22   12  12   0   8   0   2   0    0 # Strip 
+      22   12  12   0   9   0   3   0    0 # Strip 
+      22   12  12   0  10   0   4   0    0 # Strip 
+      22   12  12   0  11   0   5   0    0 # Strip 
+      22   12  12   0  12   0   6   0    0 # Strip 
+      22   12  12   0  13   0   7   0    0 # Strip 
+      22   12  12   0  14   0   8   0    0 # Strip 
+      22   12  12   0  15   0   9   0    0 # Strip 
+      22   13  13   0   0   0   0   0    1 # Strip 
+      22   13  13   0   1   0   1   0    1 # Strip 
+      22   13  13   0   2   0   2   0    1 # Strip 
+      22   13  13   0   3   0   3   0    1 # Strip 
+      22   13  13   0   4   0   4   0    1 # Strip 
+      22   13  13   0   5   0   5   0    1 # Strip 
+      22   13  13   0   6   0   6   0    1 # Strip 
+      22   13  13   0   7   0   7   0    1 # Strip 
+      22   13  13   0   8   0   8   0    1 # Strip 
+      22   13  13   0   9   0   9   0    1 # Strip 
+      22   13  13   0  10   0  10   0    1 # Strip 
+      22   13  13   0  11   0  11   0    1 # Strip 
+
+sbs.gemFPP.m24.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      22   13  13   0  12   0   0   0    0 # Strip    0- 127
+      22   13  13   0  13   0   1   0    0 # Strip  128- 255
+      22   13  13   0  14   0   2   0    0 # Strip  256- 383
+      22   13  13   0  15   0   3   0    0 # Strip  384- 511
+      22   14  14   0   0   0   4   0    0 # Strip  512- 639
+      22   14  14   0   1   0   5   0    0 # Strip  640- 767
+      22   14  14   0   2   0   6   0    0 # Strip  768- 895
+      22   14  14   0   3   0   7   0    0 # Strip  896-1023
+      22   14  14   0   4   0   8   0    0 # Strip 1024-1151
+      22   14  14   0   5   0   9   0    0 # Strip 1152-1279
+      22   14  14   0   6   0   0   0    1 # Strip 
+      22   14  14   0   7   0   1   0    1 # Strip 
+      22   14  14   0   8   0   2   0    1 # Strip 
+      22   14  14   0   9   0   3   0    1 # Strip 
+      22   14  14   0  10   0   4   0    1 # Strip 
+      22   14  14   0  11   0   5   0    1 # Strip 
+      22   14  14   0  12   0   6   0    1 # Strip 
+      22   14  14   0  13   0   7   0    1 # Strip 
+      22   14  14   0  14   0   8   0    1 # Strip 
+      22   14  14   0  15   0   9   0    1 # Strip 
+      22   15  15   0   0   0  10   0    1 # Strip 
+      22   15  15   0   1   0  11   0    1 # Strip 
+
+sbs.gemFPP.m25.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      22   15  15   0   2   0   0   0    0 # Strip 
+      22   15  15   0   3   0   1   0    0 # Strip 
+      22   15  15   0   4   0   2   0    0 # Strip 
+      22   15  15   0   5   0   3   0    0 # Strip 
+      22   15  15   0   6   0   4   0    0 # Strip 
+      22   15  15   0   7   0   5   0    0 # Strip 
+      22   15  15   0   8   0   6   0    0 # Strip 
+      22   15  15   0   9   0   7   0    0 # Strip 
+      22   15  15   0  10   0   8   0    0 # Strip 
+      22   15  15   0  11   0   9   0    0 # Strip 
+      22   15  15   0  12   0   0   0    1 # Strip 
+      22   15  15   0  13   0   1   0    1 # Strip 
+      22   15  15   0  14   0   2   0    1 # Strip 
+      22   15  15   0  15   0   3   0    1 # Strip 
+      22   16  16   0   0   0   4   0    1 # Strip 
+      22   16  16   0   1   0   5   0    1 # Strip 
+      22   16  16   0   2   0   6   0    1 # Strip 
+      22   16  16   0   3   0   7   0    1 # Strip 
+      22   16  16   0   4   0   8   0    1 # Strip 
+      22   16  16   0   5   0   9   0    1 # Strip 
+      22   16  16   0   6   0  10   0    1 # Strip 
+      22   16  16   0   7   0  11   0    1 # Strip 
+
+
+sbs.gemFPP.m26.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      22   16  16   0   8   0   0   0    0 # Strip 
+      22   16  16   0   9   0   1   0    0 # Strip 
+      22   16  16   0  10   0   2   0    0 # Strip 
+      22   16  16   0  11   0   3   0    0 # Strip 
+      22   16  16   0  12   0   4   0    0 # Strip 
+      22   16  16   0  13   0   5   0    0 # Strip 
+      22   16  16   0  14   0   6   0    0 # Strip 
+      22   16  16   0  15   0   7   0    0 # Strip 
+      22   17  17   0   0   0   8   0    0 # Strip 
+      22   17  17   0   1   0   9   0    0 # Strip 
+      22   17  17   0   2   0   0   0    1 # Strip 
+      22   17  17   0   3   0   1   0    1 # Strip 
+      22   17  17   0   4   0   2   0    1 # Strip 
+      22   17  17   0   5   0   3   0    1 # Strip 
+      22   17  17   0   6   0   4   0    1 # Strip 
+      22   17  17   0   7   0   5   0    1 # Strip 
+      22   17  17   0   8   0   6   0    1 # Strip 
+      22   17  17   0   9   0   7   0    1 # Strip 
+      22   17  17   0  10   0   8   0    1 # Strip 
+      22   17  17   0  11   0   9   0    1 # Strip 
+      22   17  17   0  12   0  10   0    1 # Strip 
+      22   17  17   0  13   0  11   0    1 # Strip 
+
+sbs.gemFPP.m27.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      22   17  17   0  14   0   0   0    0 # Strip 
+      22   17  17   0  15   0   1   0    0 # Strip 
+      22   18  18   0   0   0   2   0    0 # Strip 
+      22   18  18   0   1   0   3   0    0 # Strip 
+      22   18  18   0   2   0   4   0    0 # Strip 
+      22   18  18   0   3   0   5   0    0 # Strip 
+      22   18  18   0   4   0   6   0    0 # Strip 
+      22   18  18   0   5   0   7   0    0 # Strip 
+      22   18  18   0   6   0   8   0    0 # Strip 
+      22   18  18   0   7   0   9   0    0 # Strip 
+      22   18  18   0   8   0   0   0    1 # Strip 
+      22   18  18   0   9   0   1   0    1 # Strip 
+      22   18  18   0  10   0   2   0    1 # Strip 
+      22   18  18   0  11   0   3   0    1 # Strip 
+      22   18  18   0  12   0   4   0    1 # Strip 
+      22   18  18   0  13   0   5   0    1 # Strip 
+      22   18  18   0  14   0   6   0    1 # Strip 
+      22   18  18   0  15   0   7   0    1 # Strip 
+      22   19  19   0   0   0   8   0    1 # Strip 
+      22   19  19   0   1   0   9   0    1 # Strip 
+      22   19  19   0   2   0  10   0    1 # Strip 
+      22   19  19   0   3   0  11   0    1 # Strip 
+
+sbs.gemFPP.m28.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      20   15  15   0   0   0   0   0    0 # Strip 
+      20   15  15   0   1   0   1   0    0 # Strip 
+      20   15  15   0   2   0   2   0    0 # Strip 
+      20   15  15   0   3   0   3   0    0 # Strip 
+      20   15  15   0   4   0   4   0    0 # Strip 
+      20   15  15   0   5   0   5   0    0 # Strip 
+      20   15  15   0   6   0   6   0    0 # Strip 
+      20   15  15   0   7   0   7   0    0 # Strip 
+      20   15  15   0   8   0   8   0    0 # Strip 
+      20   15  15   0   9   0   9   0    0 # Strip 
+      20   15  15   0  10   0   0   0    1 # Strip 
+      20   15  15   0  11   0   1   0    1 # Strip 
+      20   15  15   0  12   0   2   0    1 # Strip 
+      20   15  15   0  13   0   3   0    1 # Strip 
+      20   15  15   0  14   0   4   0    1 # Strip 
+      20   15  15   0  15   0   5   0    1 # Strip 
+      20   16  16   0   0   0   6   0    1 # Strip 
+      20   16  16   0   1   0   7   0    1 # Strip 
+      20   16  16   0   2   0   8   0    1 # Strip 
+      20   16  16   0   3   0   9   0    1 # Strip 
+      20   16  16   0   4   0  10   0    1 # Strip 
+      20   16  16   0   5   0  11   0    1 # Strip 
+
+sbs.gemFPP.m29.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      20   16  16   0   6   0   0   0    0 # Strip 
+      20   16  16   0   7   0   1   0    0 # Strip 
+      20   16  16   0   8   0   2   0    0 # Strip 
+      20   16  16   0   9   0   3   0    0 # Strip 
+      20   16  16   0  10   0   4   0    0 # Strip 
+      20   16  16   0  11   0   5   0    0 # Strip 
+      20   16  16   0  12   0   6   0    0 # Strip 
+      20   16  16   0  13   0   7   0    0 # Strip 
+      20   16  16   0  14   0   8   0    0 # Strip 
+      20   16  16   0  15   0   9   0    0 # Strip 
+      20   17  17   0   0   0   0   0    1 # Strip 
+      20   17  17   0   1   0   1   0    1 # Strip 
+      20   17  17   0   2   0   2   0    1 # Strip 
+      20   17  17   0   3   0   3   0    1 # Strip 
+      20   17  17   0   4   0   4   0    1 # Strip 
+      20   17  17   0   5   0   5   0    1 # Strip 
+      20   17  17   0   6   0   6   0    1 # Strip 
+      20   17  17   0   7   0   7   0    1 # Strip 
+      20   17  17   0   8   0   8   0    1 # Strip 
+      20   17  17   0   9   0   9   0    1 # Strip 
+      20   17  17   0  10   0  10   0    1 # Strip 
+      20   17  17   0  11   0  11   0    1 # Strip
+      
+sbs.gemFPP.m30.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      20   17  17   0  12   0   0   0    0 # Strip 
+      20   17  17   0  13   0   1   0    0 # Strip 
+      20   17  17   0  14   0   2   0    0 # Strip 
+      20   17  17   0  15   0   3   0    0 # Strip 
+      20   18  18   0   0   0   4   0    0 # Strip 
+      20   18  18   0   1   0   5   0    0 # Strip 
+      20   18  18   0   2   0   6   0    0 # Strip 
+      20   18  18   0   3   0   7   0    0 # Strip 
+      20   18  18   0   4   0   8   0    0 # Strip 
+      20   18  18   0   5   0   9   0    0 # Strip 
+      20   18  18   0   6   0   0   0    1 # Strip 
+      20   18  18   0   7   0   1   0    1 # Strip 
+      20   18  18   0   8   0   2   0    1 # Strip 
+      20   18  18   0   9   0   3   0    1 # Strip 
+      20   18  18   0  10   0   4   0    1 # Strip 
+      20   18  18   0  11   0   5   0    1 # Strip
+      20   18  18   0  12   0   6   0    1 # Strip 
+      20   18  18   0  13   0   7   0    1 # Strip 
+      20   18  18   0  14   0   8   0    1 # Strip 
+      20   18  18   0  15   0   9   0    1 # Strip 
+      20   19  19   0   0   0  10   0    1 # Strip 
+      20   19  19   0   1   0  11   0    1 # Strip 
+
+sbs.gemFPP.m31.chanmap = 
+## Crate Slot mpd gem adc i2c pos inv axis # (1280 x-strips, 1536 y-strips)
+      20   19  19   0   2   0   0   0    0 # Strip 
+      20   19  19   0   3   0   1   0    0 # Strip 
+      20   19  19   0   4   0   2   0    0 # Strip 
+      20   19  19   0   5   0   3   0    0 # Strip 
+      20   19  19   0   6   0   4   0    0 # Strip 
+      20   19  19   0   7   0   5   0    0 # Strip 
+      20   19  19   0   8   0   6   0    0 # Strip 
+      20   19  19   0   9   0   7   0    0 # Strip 
+      20   19  19   0  10   0   8   0    0 # Strip 
+      20   19  19   0  11   0   9   0    0 # Strip
+      19   19  19   0   0   0   0   0    1 # Strip 
+      19   19  19   0   1   0   1   0    1 # Strip 
+      19   19  19   0   2   0   2   0    1 # Strip 
+      19   19  19   0   3   0   3   0    1 # Strip 
+      19   19  19   0   4   0   4   0    1 # Strip 
+      19   19  19   0   5   0   5   0    1 # Strip 
+      19   19  19   0   6   0   6   0    1 # Strip 
+      19   19  19   0   7   0   7   0    1 # Strip 
+      19   19  19   0   8   0   8   0    1 # Strip 
+      19   19  19   0   9   0   9   0    1 # Strip 
+      19   19  19   0  10   0  10   0    1 # Strip 
+      19   19  19   0  11   0  11   0    1 # Strip
+
+
+
+
+

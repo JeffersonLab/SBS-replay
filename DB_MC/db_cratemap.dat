@@ -152,4 +152,8 @@
 ====Crate 20 type vme
 11 3561 3561 cfg: chan_cmflags=512
 
+==== Crate 21 type vme
+11 3561 3561 cfg: chan_cmflags=512
 
+==== Crate 22 type vme
+11 3561 3561 cfg: chan_cmflags=512

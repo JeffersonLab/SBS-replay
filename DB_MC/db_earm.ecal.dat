@@ -1,0 +1,78 @@
+-------[ 2021-01-01 00:00:00 ]
+
+earm.ecal.nchan = 1656
+
+## Detector map, format:
+## crate slot start_channel end_channel ref_channel [ model ]
+## ref_channel is ignored for ADCs, but must still be specified
+## one may specify model number, but make sure it's the same as the cratemap
+earm.ecal.detmap =
+## FADCs (x16)
+  16     3     0     15   0 #      0
+  16     4     0     15   0 #     16
+  16     5     0     15   0 #     32
+  16     6     0     15   0 #     48
+  16     7     0     15   0 #     64
+  16     8     0     15   0 #     80
+  16     9     0     15   0 #     96
+  16    10     0     15   0 #     112
+  16    13     0     15   0 #     128
+  16    14     0     15   0 #     144
+  16    15     0     15   0 #     160
+  16    16     0     15   0 #     176
+  16    17     0     15   0 #     192
+  16    18     0     15   0 #     208
+  16    19     0     15   0 #     224
+  16    20     0     15   0 #     240
+  17     3     0     15   0 #     256
+  17     4     0     15   0 #     272
+## TDCs (x5)
+  17     5     0     63   0 #      0-63
+  17     6     0     63   0 #     64-127
+  17     7     0     63   0 #     128-191
+  17     8     0     63   0 #     192-255
+  17     9     0     31   0 #     256-287
+
+## (Should this be just tossed into a bank instead?)
+earm.ecal.nrows = 24
+earm.ecal.ncols = 12
+
+
+## FADC stuff
+earm.ecal.adc.conv = 0.4882
+# Number of bins (bin=4ns) at the beginning of waveform used to determing average Pedestal
+earm.ecal.adc.NPedBin = 4
+# Threshold for pulse finding in waveform (mV)
+earm.ecal.adc.thres = 20.0
+# Number of bins (bin=4ns) before Threshold Bin to use in integrating pulse
+earm.ecal.adc.NSB = 3
+# Number of bins (bin=4ns) before Threshold Bin to use in integrating pulse
+earm.ecal.adc.NSA = 10
+# Number of bin for fixed Threshold if no Threshold Crossing is found
+earm.ecal.adc.FixThresBin = 14
+#Convert adc integral in pC to GeV
+earm.ecal.adc.gain = 0.001
+#
+earm.ecal.tdc.offset = 0.0
+#
+earm.ecal.tdc.cal = 0.1
+#
+earm.ecal.tdc.GoodTimeCut = 80.0
+#
+
+## ** Parameters related to HCAL clustering **
+## Maximum distance difference between cluster seed and additional clusters, set to 0.3 m
+earm.ecal.Rmax_dis = 0.3
+## Mininum energy  for a cluster center (not really used right now)
+earm.ecal.emin  = 0.005
+earm.ecal.emin_clSeed = 0.005
+## Maximum time difference between cluster seed & additional clusters [Default = 1000ns]
+earm.ecal.tmax = 1000.0
+
+-------[ 2023-12-31 00:00:00 ] # Start GEN-RP
+
+# if we want SBS tracking to work properly we need to set the "position" of hcal according to magnet distance from target.
+# in GEN-RP, the position is hcal distance minus 4.105 m (in the "optics" coordinate system)
+
+earm.ecal.position = 0.0 0.0 4.895
+
