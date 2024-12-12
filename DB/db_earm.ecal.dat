@@ -1,3 +1,7 @@
+-------[ 2024-10-01 00:00:00 ] # Start GEP
+
+#earm.ecal.nchan = 1656
+
 ##Detector Map
 earm.ecal.detmap =
 ## crate roc id,  slot,  start_ch,  end_ch,  ref ch
@@ -222,10 +226,33 @@ earm.ecal.chanmap =
 1628 1629 1630 1631 1632 1633 1634 1635 1636 1637 1638 1639 1640 1641 1642 1643 ##Crate roc id 44, Slot 19
 1644 1645 1646 1647 1648 1649 1650 1651 1652 1653 1654 1655 ##Crate roc id 44, Slot 20
 
-earm.ecal.position = 0 0 0
+earm.ecal.position = 0.0 0.0 9.5
 
-earm.ecal.xyz = 0.0 0.0 0.0 #Overridden by detailed ypos and xpos below
-earm.ecal.dxdydz = 0.1 0.1 0.1 #Overridden by detailed ypos and xpos below
+earm.ecal.size = 2.9619 1.250811 0.45
+earm.ecal.xyz = 1.45074 -0.564624 0.0
+earm.ecal.dxdydz = 0.04293 0.04293 0.0
+
+## ECal rows and columns
+earm.ecal.nrows = 69
+## Nice! Now the number of columns for each row
+earm.ecal.ncols =
+		12 12 12
+		18 18 18
+		21 21 21 21 21 21
+		24 24 24 24 24 24
+		27 27 27 27 27 27
+		27 27 27 27 27 27
+		27 27 27 27 27 27
+		27 27 27 27 27 27
+		27 27 27 27 27 27
+		27 27 27 27 27 27
+		24 24 24 24 24 24
+		21 21 21 21 21 21
+		18 18 18	
+		
+
+# earm.ecal.xyz = 0.0 0.0 0.0 #Overridden by detailed ypos and xpos below
+# earm.ecal.dxdydz = 0.1 0.1 0.1 #Overridden by detailed ypos and xpos below
 
 earm.ecal.xpos = 
 1.45074 1.45074 1.45074 1.45074 1.45074 1.45074 1.45074 1.45074 1.45074 1.45074 1.45074 1.45074 1.40781 1.40781 1.40781 1.40781 ##Crate roc id 38, Slot 3
@@ -337,7 +364,7 @@ earm.ecal.xpos =
 -1.4253 -1.4253 -1.4253 -1.4253 -1.4253 -1.4253 -1.4253 -1.4253 -1.4253 -1.4253 -1.46823 -1.46823 -1.46823 -1.46823 -1.46823 -1.46823 ##Crate roc id 44, Slot 19
 -1.46823 -1.46823 -1.46823 -1.46823 -1.46823 -1.46823 -1.46823 -1.46823 -1.46823 -1.46823 -1.46823 -1.46823 ##Crate roc id 44, Slot 20
 
-sbs.ecal.ypos = 
+earm.ecal.ypos = 
 -0.56502 -0.5221 -0.47917 -0.43462 -0.39169 -0.34877 -0.30422 -0.26129 -0.21836 -0.17381 -0.13089 -0.08796 -0.56502 -0.5221 -0.47917 -0.43462 ##Crate roc id 38, Slot 3
 -0.39169 -0.34877 -0.30422 -0.26129 -0.21836 -0.17381 -0.13089 -0.08796 -0.56502 -0.5221 -0.47917 -0.43462 -0.39169 -0.34877 -0.30422 -0.26129 ##Crate roc id 38, Slot 4
 -0.21836 -0.17381 -0.13089 -0.08796 -0.52382 -0.4809 -0.43797 -0.39342 -0.35049 -0.30757 -0.26302 -0.22009 -0.17717 -0.13261 -0.08969 -0.04676 ##Crate roc id 38, Slot 5
@@ -454,8 +481,21 @@ earm.ecal.adc.thres = 5.0
 # Number of bins (bin=4ns) at the beginning of waveform used to determing average Pedestal
 earm.ecal.adc.NPedBin = 4
 # Number of bins (bin=4ns) before Threshold Bin to use in integrating
-pulseearm.ecal.adc.NSB = 3 #3
+earm.ecal.adc.NSB = 3 #3
 # Number of bins (bin=4ns) before Threshold Bin to use in integrating pulse
 earm.ecal.adc.NSA = 10 #10
 # Number of bin for fixed Threshold if no Threshold Crossing is found
 earm.ecal.adc.FixThresBin = 14
+
+#Convert adc integral in pC to GeV
+earm.ecal.adc.gain = 0.001
+
+## ** Parameters related to ECAL clustering **
+## Maximum distance difference between cluster seed and additional clusters, set to 0.3 m
+earm.ecal.Rmax_dis = 0.0608
+## Mininum energy  for a cluster center (not really used right now)
+earm.ecal.emin  = 0.005
+earm.ecal.emin_clSeed = 0.005
+## Maximum time difference between cluster seed & additional clusters [Default = 1000ns]
+earm.ecal.tmax = 1000.0
+

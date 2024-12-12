@@ -17,42 +17,21 @@ variable earm.ecal.nclus
 block earm.ecal.clus_blk.*
 variable earm.ecal.ngoodADChits
 
-variable bb.sh.e
-# variable bb.sh.e_c
-variable bb.sh.againblk
-variable bb.sh.eblk
-# variable bb.sh.eblk_c
-variable bb.sh.rowblk
-variable bb.sh.colblk
-variable bb.sh.x
-variable bb.sh.y
-variable bb.sh.nblk
-variable bb.sh.idblk
-variable bb.sh.atimeblk
-variable bb.sh.index
-block bb.sh.clus*
-variable bb.sh.nclus
-block bb.sh.clus_blk.*
-variable earm.ecal.ngoodADChits
-variable earm.ecal.over_threshold
-
-# # BBCAL trigger variables
+#
 variable earm.ecal.a_time
 variable earm.ecal.a_amp_p
+variable earm.ecal.a_p
+variable earm.ecal.ped
+variable earm.ecal.adcrow
+variable earm.ecal.adccol
 variable earm.ecal.adcelemID
-variable earm.ecal.tdc
-variable earm.ecal.tdcelemID
-variable earm.ecal.tdc
-variable earm.ecal.tdcelemID
 
-variable earm.ecal.rftime
-variable earm.ecal.trigtime
-
-
-# # PS 
-th2d hped_vs_elem 'Pedestal vs ECal blocks' earm.ecal.adcelemID[I] earm.ecal.ped[I] 52 0 52 200 0 200 earm.ecal.a_time[I]>0 
-th2d hADCtime_vs_elem 'ADC time (ns) vs ECal blocks' earm.ecal.adcelemID[I] earm.ecal.a_time[I] 52 0 52 100 0 100 earm.ecal.a_time[I]>0 
-th2d hADCamp_vs_elem 'ADC amplitude (mV) vs ECal blocks' earm.ecal.adcelemID[I] earm.ecal.a_amp_p[I] 52 0 52 100 0 300 earm.ecal.a_time[I]>0 
-th2d hADCint_vs_elem 'ADC integral (pC) vs ECal blocks' earm.ecal.adcelemID[I] earm.ecal.a_p[I] 52 0 52 100 0 150 earm.ecal.a_time[I]>0 
-th2d hADCeng_vs_elem 'ADC integral (GeV) vs ECal blocks' earm.ecal.adcelemID[I] earm.ecal.a_c[I] 52 0 52 100 0 2 earm.ecal.a_time[I]>0 
-th1d helemID 'ECal blocks (total 1656 of them)' earm.ecal.adcelemID[I] 52 0 52 earm.ecal.a_time[I]>0
+## ECal
+th1d helemID 'ECal blocks in column 12' earm.ecal.adcelemID[I] 68 0 68 earm.ecal.a_time[I]>0
+th2d hped_vs_elem 'Pedestal vs ECal blocks' earm.ecal.adcelemID[I] earm.ecal.ped[I] 68 0 68 200 0 200 earm.ecal.a_time[I]>0&&earm.ecal.adccol==12
+#th2d hped_vs_elem 'Pedestal vs ECal blocks' earm.ecal.adcelemID[I] earm.ecal.ped[I] 68 0 68 200 0 200 earm.ecal.adccol==12
+th2d hADCtime_vs_elem 'ADC time (ns) vs ECal blocks' earm.ecal.adcelemID[I] earm.ecal.a_time[I] 68 0 68 100 0 100 earm.ecal.a_time[I]>0&&earm.ecal.adccol==12 
+th2d hADCamp_vs_elem 'ADC amplitude (mV) vs ECal blocks' earm.ecal.adcelemID[I] earm.ecal.a_amp_p[I] 68 0 68 100 0 300 earm.ecal.a_time[I]>0&&earm.ecal.adccol==12 
+th2d hADCint_vs_elem 'ADC integral (pC) vs ECal blocks' earm.ecal.adcelemID[I] earm.ecal.a_p[I] 68 0 68 100 0 150 earm.ecal.a_time[I]>0&&earm.ecal.adccol==12 
+th2d hADCeng_vs_elem 'ADC integral (GeV) vs ECal blocks' earm.ecal.adcelemID[I] earm.ecal.a_c[I] 68 0 68 100 0 2 earm.ecal.a_time[I]>0&&earm.ecal.adccol==12 
+th1d helemID 'ECal blocks (total 1656 of them)' earm.ecal.adcelemID[I] 68 0 68 earm.ecal.a_time[I]>0&&earm.ecal.adccol==12
