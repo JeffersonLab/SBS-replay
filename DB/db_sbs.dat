@@ -1560,3 +1560,39 @@ sbs.backconstraint_x0 = 0.007 0.0
 sbs.backconstraint_y0 = 0.0 0.0
 sbs.backconstraintwidth_x = 0.04 0.25
 sbs.backconstraintwidth_y = 0.04 0.25
+
+---------[ 2025-07-11 8:30:00 ] # C-foil zero-field runs taken on 07/11/2025. Single-foil, 2-foil, and 4-foil runs. 
+sbs.geptrackingmode = 0
+sbs.polarimetermode = 1
+sbs.usedynamicconstraint = 1
+
+sbs.dynamicphslope = 0.1
+sbs.dynamicthslope = 0.1
+sbs.dynamicph0 = 0.0
+sbs.dynamicth0 = 0.0
+
+sbs.frontconstraint_x0 = 0.0 0.0
+sbs.frontconstraint_y0 = 0.0 0.0
+sbs.frontconstraintwidth_x = 0.1 0.2
+sbs.frontconstraintwidth_y = 0.1 0.2
+
+sbs.backconstraint_x0 = 0.0 0.0
+sbs.backconstraint_y0 = 0.0 0.0
+sbs.backconstraintwidth_x = 0.015 0.5
+sbs.backconstraintwidth_y = 0.03 0.5
+
+---------[ 2025-07-11 15:55:00 ] # Back to production running on LH2 with field ON.
+sbs.geptrackingmode = 1
+sbs.geptrackingflag = 2
+sbs.polarimetermode = 1
+sbs.usedynamicconstraint = 0
+
+sbs.frontconstraint_x0 = 0.005 0.0
+sbs.frontconstraint_y0 = 0.0 0.0
+sbs.frontconstraintwidth_x = 0.04 0.08
+sbs.frontconstraintwidth_y = 0.04 0.08
+
+sbs.backconstraint_x0 = 0.007 0.0
+sbs.backconstraint_y0 = 0.0 0.0
+sbs.backconstraintwidth_x = 0.04 0.25
+sbs.backconstraintwidth_y = 0.04 0.25

@@ -3724,3 +3724,11 @@ sbs.gemFPP.m31.threshold_sample =           55.12
 sbs.gemFPP.m31.threshold_stripsum =           137.8
 sbs.gemFPP.m31.threshold_clustersum =          220.48
 
+---------[ 2025-07-11 8:30:00 ] # Start C-foil zero-field runs taken on 7/11/2025. Single-foil, 2-foil, and 4-foil runs.
+sbs.gemFPP.multitracksearch = 0
+sbs.gemFPP.dump_geometry_info = 1
+
+---------[ 2025-07-11 15:55:00 ] # Back to production running on LH2 with field ON.
+sbs.gemFPP.multitracksearch = 1
+sbs.gemFPP.dump_geometry_info = 0
+>>>>>>> 50535f4 (DB changes to replay C-foil zero-field runs taken on 07/11/2025)

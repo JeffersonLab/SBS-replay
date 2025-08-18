@@ -2335,6 +2335,7 @@ sbs.gemFT.constraintwidth_phi = 0.06
 sbs.gemFT.multitracksearch=1
 sbs.gemFT.pmin = 5.0
 sbs.gemFT.useslopeconstraint=1
+<<<<<<< HEAD
 
 sbs.gemFT.useelasticconstraint = 1
 sbs.gemFT.constraintwidth_theta = 0.02
@@ -2674,3 +2675,16 @@ sbs.gemFT.m13.threshold_sample =          67.804
 sbs.gemFT.m13.threshold_stripsum =          169.51
 sbs.gemFT.m13.threshold_clustersum =          271.22
 
+sbs.gemFT.useelasticconstraint = 1
+
+---------[ 2025-07-11 8:30:00 ] # C-foil zero-field runs taken on 07/11/2025. Single-foil, 2-foil, and 4-foil runs.
+sbs.gemFT.useopticsconstraint = 0
+sbs.gemFT.useslopeconstraint = 0
+sbs.gemFT.multitracksearch = 0
+sbs.gemFT.dump_geometry_info = 1
+
+---------[ 2025-07-11 15:55:00 ] # Begin production running on LH2 with field ON.
+sbs.gemFT.useopticsconstraint = 1
+sbs.gemFT.useslopeconstraint = 1
+sbs.gemFT.multitracksearch = 1
+sbs.gemFT.dump_geometry_info = 0
