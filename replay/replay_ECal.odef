@@ -16,6 +16,7 @@
 #variable earm.ecal.nclus
 #block earm.ecal.clus_blk.*
 variable earm.ecal.ngoodADChits
+block earm.ecal.goodblock.*
 
 block earm.tr.*
 
