@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "TOFcal_consolidated.C": "cpp",
+        "GetRFoffsets.C": "cpp",
+        "GetInternalOffsets.C": "cpp"
+    }
+}

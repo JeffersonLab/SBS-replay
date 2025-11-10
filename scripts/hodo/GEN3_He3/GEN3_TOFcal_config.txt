@@ -1,0 +1,42 @@
+/volatile/halla/sbs/koeneman/replays/He3/GEN3/rootfiles/e1209016_fullreplay_*.root
+endlist
+bb.tr.n>0&&bb.hodotdc.clus.trackindex[0]==0&&bb.ps.e>0.2&&abs(bb.tr.vz[0])<0.27&&abs(bb.etot_over_p[0]-1.0)<0.3&&bb.hodotdc.nclus>=1.0&&sbs.hcal.e>0.02&&g.trigbits==4
+endcut
+bunch_spacing_ns 2.004008
+etof0 15.427
+BBtrig_t0 350.0
+sbsmaxfield 1.02
+ebeam 6.373
+hacldist 17.0
+thetaHCAL 22.1
+sbsdist 2.8
+W2min 0.2
+W2max 1.8
+mineventsperbar 100
+RFoffsetpeak_threshold 0.5
+totmin 7.0
+totmax 32.0
+totdiff_max 10.0
+tdiff_max 10.0
+ydiff_max 0.25
+xdiff_max 0.06
+dxsigma 0.5
+dysigma 0.5
+dx0 0.0
+dy0 0.0
+dxdy_nsigma_cut 1.0
+#useRFcorr 1
+useelasticcut_HCAL 1
+#fixhodoparams 0
+meantime_offsets_old hodomeantime_old.txt
+vscint_old hodovscint_old.txt
+walkcorr_old hodowalkcorr_old.txt
+RFoffsets hodoRFoffsets_old.txt
+etofparams_old etofparams_old.txt
+HCAL_ADCtime_offsets hcal_adctime_offsets.txt
+BBPS_ADCtime_offsets bbcalps_adctime_offsets.txt
+BBSH_ADCtime_offsets bbcalsh_adctime_offsets.txt
+endconfig
+# GEN3 SBS field settings
+2464 3265 1.0
+endfieldconfig

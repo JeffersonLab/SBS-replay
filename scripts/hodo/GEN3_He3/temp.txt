@@ -1,0 +1,12 @@
+if ( bar!=hodorefID+1 && fabs( RFoffsets[bar-1] - xpeak_best )>2.0 ) {
+  RFoffsets[bar] = xtest;
+  dRFoffsets[bar] = 2.0;
+  continue;
+}
+
+
+if ( bar!=hodorefID-1 && fabs( RFoffsets[bar+1] - xpeak_best )>2.0 ) {
+  RFoffsets[bar] = xtest;
+  dRFoffsets[bar] = 2.0;
+  continue;
+}

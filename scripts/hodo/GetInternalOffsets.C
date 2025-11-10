@@ -29,34 +29,34 @@
 #include "TClonesArray.h"
 
 
-void GetInternaloffsets( const char *configfilename, const char *outputfilename="HodoInternalOffsets_temp.root", int refID = 40, double reft0 = 0.0, double etof0=15.1667 ){
+void GetInternalOffsets( const char *configfilename, const char *outputfilename="HodoInternalOffsets_temp.root", int refID = 40, double reft0 = 0.0, double etof0=15.1667 ){
 
   TFile *fout = new TFile(outputfilename,"RECREATE");
-  
+
   ifstream configfile(configfilename);
   if( !configfile ) return;
 
   TString currentline;
 
   TChain *C = new TChain("T");
-  
+
   while( currentline.ReadLine( configfile ) && !currentline.BeginsWith("endlist") ){
     if( !currentline.BeginsWith("#") ){
       C->Add( currentline.Data() );
     }
   }
-  
+
   //TFile *fout = new TFile(outputfilename,"RECREATE");
-  
-  
+
+
   //  C->Add(rootfilename);
 
   gmn_tree *T = new gmn_tree(C);
 
-  //  double bunchspace = 1.0e9/RF_freq; // ns 
+  //  double bunchspace = 1.0e9/RF_freq; // ns
 
-  //Total time range is going to be 3*bunchspace, we want about 8 bins/ns so 
-  
+  //Total time range is going to be 3*bunchspace, we want about 8 bins/ns so
+
   //int nbins = ;
   //int nbins=100;
   //  TH2D *hdT_hodo_ID = new TH2D("hdT_hodo_ID", "; hodoscope bar ID ; t_{mean}^{raw}-t_{RF} (ns)", 90,-0.5,89.5, nbins, -1.5*bunchspace, 1.5*bunchspace);
@@ -74,17 +74,17 @@ void GetInternaloffsets( const char *configfilename, const char *outputfilename=
   //double wR[90];
   //double t0[90];
   //double vscint[90];
-  
+
   double walk_default = (0.2113+0.2794)/2.0;
   double vscint_default = 0.162;
-  
+
   vector<double> wL(90,walk_default);
   vector<double> wR(90,walk_default);
   vector<double> t0(90,0.0);
   vector<double> vscint(90,vscint_default);
 
   //Hodoscope internal alignment does not use nor require RF corrections:
-  
+
   //Read parameters from initial fit:
   ifstream walkfile("hodowalkcorr_default.dat");
   ifstream vscintfile("hodovscint_default.dat");
@@ -103,17 +103,17 @@ void GetInternaloffsets( const char *configfilename, const char *outputfilename=
       if( wR[i] < 0 ) wR[i] *= -1.;
     }
   }
-  
-  
+
+
   // Determine mean time offsets in an (RF-corrected) way;
   // Meantimes are already corrected for time walk
   // The idea is to look at (raw) mean-time differences between neighboring bars in the same cluster.
-  // Minimize sum of squared corrected time differences between 
+  // Minimize sum of squared corrected time differences between
   // chi^2 = sum_{i=1}^Nevent [sum_{j=1}^{Nhits_i-1} [sum_{k=j+1}^N_hits_i (t_j^i-t_k^i)^2]]
   // Where t_j^i,corr = t_mean_j^i - t0ji
   // Then dchi^2 / dt0_m = 0 = 2 * sum_i,j,k ( tmean_j^i - tmean_k^i - t0ji + t0ki ) * ( delta mk - delta mj )
   // = 2 * [ sum_i,j (tji-tmi + -t0ji + t0mi) ] - sum_i,k (t_mi - t_ki - t0mi + t0ki ) ] = 0
-  // coefficient of 
+  // coefficient of
   TMatrixD M(90,90);
   TVectorD b(90);
 
@@ -129,11 +129,11 @@ void GetInternaloffsets( const char *configfilename, const char *outputfilename=
   double Lbar_hodo = 0.6; //meters
 
   vector<double> nevent_by_bar(90, 0.0);
-  
+
   while( C->GetEntry(nevent++)){
 
     if( nevent % 10000 == 0 ) cout << "event " << nevent << endl;
-    
+
     if( T->bb_tr_n >= 1. && T->bb_hodotdc_clus_trackindex[0]==0. && T->bb_ps_e>0.2 && T->bb_tdctrig_rftime != 0. && T->bb_tdctrig_rftime < 1.e10 && T->bb_tdctrig_trigtime < 1.e10 ){
       double RFtime = T->bb_tdctrig_rftime + T->bb_tr_vz[0]/0.299792458;
 
@@ -146,12 +146,12 @@ void GetInternaloffsets( const char *configfilename, const char *outputfilename=
       double etof = pathl/0.299792458-etof0; //electron TOF from vertex to hodo.
       double yhodo = T->bb_tr_y[0]+zhodo*T->bb_tr_ph[0];
       double xhodo = T->bb_tr_x[0]+zhodo*T->bb_tr_th[0];
-      
+
       double dLEFT = std::min(Lbar_hodo,std::max(0.0,Lbar_hodo/2.0 - yhodo));
       double dRIGHT = std::min(Lbar_hodo,std::max(0.0,Lbar_hodo/2.0 + yhodo));
-      
+
       double tmean0 = 0.0;
-      
+
       for( int ibar=0; ibar<T->bb_hodotdc_clus_size[0]; ibar++ ){
 	//double tHODO = T->bb_hodotdc_clus_bar_tdc_meantime[ibar];
 	double tleft = T->bb_hodotdc_clus_bar_tdc_tleft[ibar];
@@ -162,12 +162,12 @@ void GetInternaloffsets( const char *configfilename, const char *outputfilename=
 	//double tmean = T->bb_hodotdc_clus_bar_tdc_meantime[ibar];
 	//double ypos = T->bb_hodotdc_clus_bar_tdc_timehitpos[ibar];
 	double xpos = T->bb_hodotdc_clus_bar_tdc_vpos[ibar];
-	
+
 	double IDHODO = T->bb_hodotdc_clus_bar_tdc_id[ibar];
-	
+
 	double tleft_corr = tleft - etof + wL[IDHODO]*totleft - t0[IDHODO] - dLEFT/vscint[IDHODO];
 	double tright_corr = tright - etof + wR[IDHODO]*totright - t0[IDHODO] - dRIGHT/vscint[IDHODO];
-	
+
 	double tHODO = 0.5*(tleft_corr + tright_corr);
 
 	//t0 and tof cancel in L/R difference:
@@ -175,7 +175,7 @@ void GetInternaloffsets( const char *configfilename, const char *outputfilename=
 	//tL - tR = -2y/vscint
 	//Recalculate ypos based on fit results:
 	double ypos = -0.5*vscint[IDHODO]*tdiff;
-	
+
 	//	double deltat = tHODO - RFtime;
 	//deltat -= bunchspace * ( floor(deltat/bunchspace) + 0.5 );
 
@@ -197,16 +197,16 @@ void GetInternaloffsets( const char *configfilename, const char *outputfilename=
 	    double tright_j = T->bb_hodotdc_clus_bar_tdc_tright[jbar];
 	    double totleft_j = T->bb_hodotdc_clus_bar_tdc_totleft[jbar];
 	    double totright_j = T->bb_hodotdc_clus_bar_tdc_totright[jbar];
-	    
+
 	    //double tmean = T->bb_hodotdc_clus_bar_tdc_meantime[jbar];
 	    //double ypos_j = T->bb_hodotdc_clus_bar_tdc_timehitpos[jbar];
 	    double xpos_j = T->bb_hodotdc_clus_bar_tdc_vpos[jbar];
-	    
+
 	    double IDHODO_j = T->bb_hodotdc_clus_bar_tdc_id[jbar];
-	    
+
 	    double tleft_corr_j = tleft_j - etof + wL[IDHODO_j]*totleft_j - t0[IDHODO_j] - dLEFT/vscint[IDHODO_j];
 	    double tright_corr_j = tright_j - etof + wR[IDHODO_j]*totright_j - t0[IDHODO_j] - dRIGHT/vscint[IDHODO_j];
-	    
+
 	    double tHODO_j = 0.5*(tleft_corr_j + tright_corr_j);
 	    double tdiff_j = tleft_j + wL[IDHODO_j]*totleft_j - (tright_j + wR[IDHODO_j]*totright_j);
 	    double ypos_j = -0.5*vscint[IDHODO_j]*tdiff_j;
@@ -225,7 +225,7 @@ void GetInternaloffsets( const char *configfilename, const char *outputfilename=
 	    if( goodhit_j ){
 	      nevent_by_bar[IDHODO] += 1.0;
 	      nevent_by_bar[IDHODO_j] += 1.0;
-	      
+
 	      b(IDHODO) += -1.0*(t_j - t_i);
 	      b(IDHODO_j) += 1.0*(t_j - t_i);
 	      M(IDHODO,IDHODO) += 1.0;
@@ -235,11 +235,11 @@ void GetInternaloffsets( const char *configfilename, const char *outputfilename=
 	    }
 	  }
 	}
-	
+
 	//double deltat = fmod(tHODO - (RFtime - trigtime - bunchspace * floor( ( RFtime-trigtime ) / bunchspace ) ), bunchspace);
 
 	// hdT_hodo_ID->Fill( IDHODO, deltat );
-				 
+
 	// hdT_hodo_ID->Fill( IDHODO, deltat - bunchspace );
 	// hdT_hodo_ID->Fill( IDHODO, deltat + bunchspace );
 	// for( int jbar=ibar+1; jbar<T->bb_hodotdc_clus_size[0]; jbar++ ){
@@ -257,7 +257,7 @@ void GetInternaloffsets( const char *configfilename, const char *outputfilename=
 	//   M(IDHODO,IDHODO) += -1.0;
 	//   M(IDj,IDj) += -1.0;
 	//   b(IDHODO) += deltat_ij;
-	//   b(IDj) += deltat_ij;	  
+	//   b(IDj) += deltat_ij;
 	// }
       }
     }
@@ -276,7 +276,7 @@ void GetInternaloffsets( const char *configfilename, const char *outputfilename=
       }
     }
   }
-  
+
   TDecompSVD A(M);
   A.Solve(b);
 
@@ -288,12 +288,12 @@ void GetInternaloffsets( const char *configfilename, const char *outputfilename=
     // we WANT b(refID) = reft0
     // b(refID) += reft0 - b(refID)
     b(i) += corr;
-    t0[i] += b(i); 
+    t0[i] += b(i);
   }
 
   TString dbfilename = outputfilename;
   dbfilename.ReplaceAll(".root",".dat");
-  
+
   ofstream dbfile( dbfilename.Data() );
 
   dbfile << "bb.hodotdc.meantime_offset = " << endl;
@@ -303,7 +303,7 @@ void GetInternaloffsets( const char *configfilename, const char *outputfilename=
     }
     TString entry;
     dbfile << entry.Format("%15.6g", t0[i]) << " ";
-    
+
   }
 
   //Do a second loop over the data and fill some histos:
@@ -317,7 +317,7 @@ void GetInternaloffsets( const char *configfilename, const char *outputfilename=
   while( C->GetEntry(nevent++)){
 
     if( nevent % 10000 == 0 ) cout << "event " << nevent << endl;
-    
+
     if( T->bb_tr_n >= 1. && T->bb_hodotdc_clus_trackindex[0]==0. && T->bb_ps_e>0.2 && T->bb_tdctrig_rftime != 0. && T->bb_tdctrig_rftime < 1.e10 && T->bb_tdctrig_trigtime < 1.e10 ){
       double RFtime = T->bb_tdctrig_rftime + T->bb_tr_vz[0]/0.299792458;
 
@@ -330,12 +330,12 @@ void GetInternaloffsets( const char *configfilename, const char *outputfilename=
       double etof = pathl/0.299792458-etof0; //electron TOF from vertex to hodo.
       double yhodo = T->bb_tr_y[0]+zhodo*T->bb_tr_ph[0];
       double xhodo = T->bb_tr_x[0]+zhodo*T->bb_tr_th[0];
-      
+
       double dLEFT = std::min(Lbar_hodo,std::max(0.0,Lbar_hodo/2.0 - yhodo));
       double dRIGHT = std::min(Lbar_hodo,std::max(0.0,Lbar_hodo/2.0 + yhodo));
-      
+
       double tmean0 = 0.0;
-      
+
       for( int ibar=0; ibar<T->bb_hodotdc_clus_size[0]; ibar++ ){
 	//double tHODO = T->bb_hodotdc_clus_bar_tdc_meantime[ibar];
 	double tleft = T->bb_hodotdc_clus_bar_tdc_tleft[ibar];
@@ -346,12 +346,12 @@ void GetInternaloffsets( const char *configfilename, const char *outputfilename=
 	//double tmean = T->bb_hodotdc_clus_bar_tdc_meantime[ibar];
 	//double ypos = T->bb_hodotdc_clus_bar_tdc_timehitpos[ibar];
 	double xpos = T->bb_hodotdc_clus_bar_tdc_vpos[ibar];
-	
+
 	double IDHODO = T->bb_hodotdc_clus_bar_tdc_id[ibar];
-	
+
 	double tleft_corr = tleft - etof + wL[IDHODO]*totleft - t0[IDHODO] - dLEFT/vscint[IDHODO];
 	double tright_corr = tright - etof + wR[IDHODO]*totright - t0[IDHODO] - dRIGHT/vscint[IDHODO];
-	
+
 	double tHODO = 0.5*(tleft_corr + tright_corr);
 
 	//t0 and tof cancel in L/R difference:
@@ -359,7 +359,7 @@ void GetInternaloffsets( const char *configfilename, const char *outputfilename=
 	//tL - tR = -2y/vscint
 	//Recalculate ypos based on fit results:
 	double ypos = -0.5*vscint[IDHODO]*tdiff;
-	
+
 	//double deltat = tHODO - RFtime;
 	//deltat -= bunchspace * ( floor(deltat/bunchspace) + 0.5 );
 
@@ -368,7 +368,7 @@ void GetInternaloffsets( const char *configfilename, const char *outputfilename=
 	  tmean0 = t_i;
 	}
 
-	
+
 
 	//	if( goodhit_i ){
 	for( int jbar=ibar+1; jbar<T->bb_hodotdc_clus_size[0]; jbar++ ){
@@ -376,22 +376,22 @@ void GetInternaloffsets( const char *configfilename, const char *outputfilename=
 	  double tright_j = T->bb_hodotdc_clus_bar_tdc_tright[jbar];
 	  double totleft_j = T->bb_hodotdc_clus_bar_tdc_totleft[jbar];
 	  double totright_j = T->bb_hodotdc_clus_bar_tdc_totright[jbar];
-	  
+
 	  //double tmean = T->bb_hodotdc_clus_bar_tdc_meantime[jbar];
 	  //double ypos_j = T->bb_hodotdc_clus_bar_tdc_timehitpos[jbar];
 	  double xpos_j = T->bb_hodotdc_clus_bar_tdc_vpos[jbar];
-	  
+
 	  double IDHODO_j = T->bb_hodotdc_clus_bar_tdc_id[jbar];
-	  
+
 	  double tleft_corr_j = tleft_j - etof + wL[IDHODO_j]*totleft_j - t0[IDHODO_j] - dLEFT/vscint[IDHODO_j];
 	  double tright_corr_j = tright_j - etof + wR[IDHODO_j]*totright_j - t0[IDHODO_j] - dRIGHT/vscint[IDHODO_j];
-	  
+
 	  double tHODO_j = 0.5*(tleft_corr_j + tright_corr_j);
 	  double tdiff_j = tleft_j + wL[IDHODO_j]*totleft_j - (tright_j + wR[IDHODO_j]*totright_j);
 	  double ypos_j = -0.5*vscint[IDHODO_j]*tdiff_j;
-	  
+
 	  double t_j = tHODO_j;
-	  
+
 	  hdt_ji->Fill( t_j - t_i );
 	  hdt_ji_IDj->Fill( IDHODO_j, t_j - t_i );
 	  hdt_ji_IDi->Fill( IDHODO, t_j - t_i );
@@ -399,7 +399,7 @@ void GetInternaloffsets( const char *configfilename, const char *outputfilename=
       }
     }
   }
-	  
+
   fout->Write();
-  
+
 }
