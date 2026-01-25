@@ -2070,15 +2070,15 @@ bb.forwardoptics_parameters =
      -0.34886017      0.070426927      -0.44995393      0.024582746  0 0 0 1 1
        1.1328192      -0.23611212        1.6597674      -0.13326304  0 0 0 0 2
 
-bb.frontconstraint_x0 = -0.00348457
-bb.frontconstraint_y0 = 0.00704323
-bb.backconstraint_x0 = 0.000721341
-bb.backconstraint_y0 = -0.00305035
+bb.frontconstraint_x0 = 0.0462384
+bb.frontconstraint_y0 = -0.00548541
+bb.backconstraint_x0 = -0.000883157
+bb.backconstraint_y0 = 0.00242518
 
-bb.frontconstraintwidth_x = 0.05783
-bb.frontconstraintwidth_y = 0.136533
-bb.backconstraintwidth_x = 0.0514141
-bb.backconstraintwidth_y = 0.0639998
+bb.frontconstraintwidth_x = 0.15
+bb.frontconstraintwidth_y = 0.129503
+bb.backconstraintwidth_x = 0.04764
+bb.backconstraintwidth_y = 0.0649617
 
 bb.etof_avg =      15.4333333
 
@@ -2113,15 +2113,15 @@ bb.frontconstraintwidth_y = 0.25
 
 -------[ 2023-03-02 02:47:00 ] # back to full-field running
 
-bb.frontconstraint_x0 = -0.00348457
-bb.frontconstraint_y0 = 0.00704323
-bb.backconstraint_x0 = 0.000721341
-bb.backconstraint_y0 = -0.00305035
+bb.frontconstraint_x0 = 0.0462384
+bb.frontconstraint_y0 = -0.00548541
+bb.backconstraint_x0 = -0.000883157
+bb.backconstraint_y0 = 0.00242518
 
-bb.frontconstraintwidth_x = 0.05783
-bb.frontconstraintwidth_y = 0.136533
-bb.backconstraintwidth_x = 0.0514141
-bb.backconstraintwidth_y = 0.0639998
+bb.frontconstraintwidth_x = 0.15
+bb.frontconstraintwidth_y = 0.129503
+bb.backconstraintwidth_x = 0.04764
+bb.backconstraintwidth_y = 0.0649617
 
 -------[ 2023-09-01 00:00:00 ] # GEN-4b start
 
@@ -2194,7 +2194,7 @@ bb.forwardoptics_parameters =
         -0.50279      0.014872153      0.054740526      0.036410311  0 0 0 1 1
      0.016348603     -0.091233182      -0.12301598     -0.033432539  0 0 0 0 2
 
-bb.frontconstraint_x0 = 0.05766
+bb.frontconstraint_x0 = 0.04901678
 bb.frontconstraint_y0 = 0.012
 bb.backconstraint_x0 = 0.00
 bb.backconstraint_y0 = 0.00
@@ -2213,7 +2213,7 @@ bb.frontconstraintwidth_y = 0.15
 
 --------[ 2023-10-19 15:38:00 ] # back to full field
 
-bb.frontconstraint_x0 = 0.05766
+bb.frontconstraint_x0 = 0.04901678
 bb.frontconstraint_y0 = 0.012
 bb.backconstraint_x0 = 0.00
 bb.backconstraint_y0 = 0.00
