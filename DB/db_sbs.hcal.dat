@@ -60,6 +60,8 @@ sbs.hcal.usetrigphasecorr = 0
 sbs.hcal.trigphaseoffset = 2
 sbs.hcal.trigphasemultiple = 6
 
+sbs.hcal.nmax_cluster = 25
+
 sbs.hcal.ledmap = 16 30
 
 ## Channel map from channel to logical channel
@@ -490,9 +492,9 @@ sbs.hcal.adc.timeoffset =
 --------[ 2021-11-08 17:00:00 ] 
 ## Minimum energy for a cluster center
 #sbs.hcal.emin_clSeed = 0.036
-sbs.hcal.emin_clSeed = 0.0025
-sbs.hcal.emin = 0.001
-sbs.hcal.emin_clTotal = 0.005
+sbs.hcal.emin_clSeed = 0.02
+sbs.hcal.emin = 0.002
+sbs.hcal.emin_clTotal = 0.04
 sbs.hcal.tdc.tw = 0.75 0.49
 sbs.hcal.tmax = 10.0
 #sbs.hcal.tmax = 11.11
@@ -609,9 +611,11 @@ sbs.hcal.tdc.offset =
 --------[ 2021-11-17 08:00:00 ]
 ## Minimum energy for a cluster center
 #sbs.hcal.emin_clSeed = 0.048
-sbs.hcal.emin_clSeed = 0.0025
-sbs.hcal.emin = 0.001
-sbs.hcal.emin_clTotal = 0.005
+
+# AJRP 1/30/2026: bumping up clustering thresholds for SBS-11 to reduce cluster multiplicity (also writing out more clusters):
+sbs.hcal.emin_clSeed = 0.025
+sbs.hcal.emin = 0.0025 
+sbs.hcal.emin_clTotal = 0.05
 sbs.hcal.tdc.tw = 0.50 0.50
 sbs.hcal.tmax = 10.0
 
@@ -762,9 +766,9 @@ sbs.hcal.tdc.offset =
 ## Minimum energy for a cluster center
 #sbs.hcal.emin_clSeed = 0.027
 
-sbs.hcal.emin_clSeed = 0.0025
-sbs.hcal.emin = 0.001
-sbs.hcal.emin_clTotal = 0.005
+sbs.hcal.emin_clSeed = 0.015
+sbs.hcal.emin = 0.002
+sbs.hcal.emin_clTotal = 0.03
 sbs.hcal.tdc.tw = 0.48 0.50
 sbs.hcal.tmax = 10.0
 
