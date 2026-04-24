@@ -33,7 +33,7 @@ variable sbs.z_bcp_FPP
 
 block sbs.tdctrig.*
 
-block FTROI.*
+#block FTROI.* #GEP only
 
 block SBS.gold.*
 
