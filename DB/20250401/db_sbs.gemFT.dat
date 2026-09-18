@@ -1,4 +1,4 @@
-## DB for GEp front tracker. Two XZ layers in front, followed by four UV layers and two XY layers.
+
 # Layer 0: UVaXW (L0)
 # Layer 1: UVaXW (L1)
 # Layer 2: UVaUV (L2)
@@ -1045,7 +1045,7 @@ sbs.gemFT.trackchi2cut = 15 20 25 30 40
 sbs.gemFT.sigmahitpos = 0.0001
 sbs.gemFT.do_efficiencies = 1
 sbs.gemFT.dump_geometry_info = 1
-sbs.gemFT.dump_rawADCrange = 1
+sbs.gemFT.dump_rawADCrange = 0
 
 sbs.gemFT.efficiency_bin_width_1D = 0.02
 sbs.gemFT.efficiency_bin_width_2D = 0.04
@@ -1075,21 +1075,19 @@ sbs.gemFT.chan_cm_flags = 640 # defines the "dummy" reference channel for storin
 sbs.gemFT.commonmode_nstriplo = 10 # for sorting method
 sbs.gemFT.commonmode_nstriphi = 50 # for sorting method... for an occupancy ~40%
 sbs.gemFT.commonmode_niter = 3
-sbs.gemFT.commonmode_minstrips = 25
+sbs.gemFT.commonmode_minstrips = 20
 
 # histogramming-method parameters: 
 sbs.gemFT.commonmode_binwidth_nsigma = 7.0 # +/- 3.5 * DB sigma
 sbs.gemFT.commonmode_scanrange_nsigma = 5.0 
 sbs.gemFT.commonmode_stepsize_nsigma = 0.75
 
-sbs.gemFT.commonmode_online_flag = 4
+sbs.gemFT.commonmode_online_flag = 4 # change to six after CM min is lowered later in the run
 
 # attempt to correct common-mode for negative bias:
 sbs.gemFT.correct_common_mode = 0
 sbs.gemFT.correct_common_mode_minstrips = 20
 sbs.gemFT.correct_common_mode_nsigma = 2.0
-
-sbs.gemFT.commonmode_online_flag = 4 # GEN+ version of online CM calculation
 
 sbs.gemFT.use_commonmode_rolling_average = 1
 sbs.gemFT.commonmode_nevents_lookback = 5
@@ -1811,7 +1809,6 @@ sbs.gemFT.filterflag2D = -1
 
 sbs.gemFT.minhighqualityhitsontrack = 2
 
-# this will disable any suppression of "small" local maxima overlapping higher peaks in the 1D clustering:
 sbs.gemFT.peakprominence_minsigma = 2.0
 sbs.gemFT.peakprominence_minfraction = 0.0
 
@@ -2472,8 +2469,18 @@ sbs.gemFT.useslopeconstraint=0
 sbs.gemFT.constraintwidth_theta = 0.06
 sbs.gemFT.constraintwidth_phi = 0.06
 
+sbs.gemFT.usestriptimingcut = 0
+sbs.gemFT.suppressfirstlast = 0
+sbs.gemFT.use_enhanced_chi2 = 0
+sbs.gemFT.cuttrackt0 = 200.0
 
 ---------[ 2025-05-30 00:45:00 ] # Back to production running.
+
+sbs.gemFT.usestriptimingcut = 1
+sbs.gemFT.suppressfirstlast = -1
+sbs.gemFT.use_enhanced_chi2 = 1
+sbs.gemFT.cuttrackt0 = 20.0
+
 sbs.gemFT.multitracksearch=1
 sbs.gemFT.pmin = 5.0
 sbs.gemFT.useslopeconstraint=1
